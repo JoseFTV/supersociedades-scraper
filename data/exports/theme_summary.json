@@ -1,0 +1,517 @@
+{
+  "total_classified": 300,
+  "total_samples": 300,
+  "theme_distribution": [
+    {
+      "theme": "INSPECCION_VIGILANCIA",
+      "count": 42,
+      "pct": 14.0
+    },
+    {
+      "theme": "INSOLVENCIA",
+      "count": 36,
+      "pct": 12.0
+    },
+    {
+      "theme": "SOCIOS_ACCIONISTAS",
+      "count": 34,
+      "pct": 11.3
+    },
+    {
+      "theme": "DISOLUCION_LIQUIDACION",
+      "count": 34,
+      "pct": 11.3
+    },
+    {
+      "theme": "ORGANOS_SOCIALES",
+      "count": 27,
+      "pct": 9.0
+    },
+    {
+      "theme": "TIPOS_SOCIETARIOS",
+      "count": 25,
+      "pct": 8.3
+    },
+    {
+      "theme": "REFORMAS_ESTATUTARIAS",
+      "count": 18,
+      "pct": 6.0
+    },
+    {
+      "theme": "CAPITAL_APORTES",
+      "count": 17,
+      "pct": 5.7
+    },
+    {
+      "theme": "ADMINISTRADORES",
+      "count": 14,
+      "pct": 4.7
+    },
+    {
+      "theme": "GRUPOS_EMPRESARIALES",
+      "count": 10,
+      "pct": 3.3
+    },
+    {
+      "theme": "CONTRATACION_COMERCIAL",
+      "count": 8,
+      "pct": 2.7
+    },
+    {
+      "theme": "REVISOR_FISCAL",
+      "count": 7,
+      "pct": 2.3
+    },
+    {
+      "theme": "UTILIDADES_DIVIDENDOS",
+      "count": 5,
+      "pct": 1.7
+    },
+    {
+      "theme": "LIBROS_CONTABILIDAD",
+      "count": 5,
+      "pct": 1.7
+    },
+    {
+      "theme": "OTRO",
+      "count": 4,
+      "pct": 1.3
+    },
+    {
+      "theme": "PROCEDIMIENTO",
+      "count": 4,
+      "pct": 1.3
+    },
+    {
+      "theme": "ENTIDADES_SIN_ANIMO_LUCRO",
+      "count": 4,
+      "pct": 1.3
+    },
+    {
+      "theme": "REGIMEN_CAMBIARIO",
+      "count": 3,
+      "pct": 1.0
+    },
+    {
+      "theme": "ILEGIBLE",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "theme": "REGISTRO_MERCANTIL",
+      "count": 1,
+      "pct": 0.3
+    }
+  ],
+  "secondary_distribution": [
+    [
+      "ORGANOS_SOCIALES",
+      14
+    ],
+    [
+      "INSPECCION_VIGILANCIA",
+      14
+    ],
+    [
+      "PROCEDIMIENTO",
+      13
+    ],
+    [
+      "CAPITAL_APORTES",
+      9
+    ],
+    [
+      "REGISTRO_MERCANTIL",
+      8
+    ],
+    [
+      "ADMINISTRADORES",
+      7
+    ],
+    [
+      "TIPOS_SOCIETARIOS",
+      7
+    ],
+    [
+      "CONTRATACION_COMERCIAL",
+      7
+    ],
+    [
+      "SOCIOS_ACCIONISTAS",
+      6
+    ],
+    [
+      "REFORMAS_ESTATUTARIAS",
+      5
+    ],
+    [
+      "DISOLUCION_LIQUIDACION",
+      5
+    ],
+    [
+      "INSOLVENCIA",
+      4
+    ],
+    [
+      "LIBROS_CONTABILIDAD",
+      4
+    ],
+    [
+      "GRUPOS_EMPRESARIALES",
+      4
+    ],
+    [
+      "REGIMEN_CAMBIARIO",
+      2
+    ],
+    [
+      "PROPIEDAD_INTELECTUAL",
+      2
+    ],
+    [
+      "REVISOR_FISCAL",
+      1
+    ]
+  ],
+  "subtemas_by_theme": {
+    "ORGANOS_SOCIALES": [
+      "aprobación de actas de junta directiva mediante comisión de directores",
+      "composición de junta directiva en fondos ganaderos bajo reorganización empresarial",
+      "capacidad de la sociedad y autorización de asamblea para participar en juntas directivas de entidades sin ánimo de lucro",
+      "cálculo de quórum en asamblea de accionistas cuando el número de acciones es impar",
+      "efectos de convocatorias deficientes a reuniones de junta directiva",
+      "consecuencias jurídicas por no llevar actas de junta de socios y procedimiento para elaborarlas",
+      "representación legal - efectos del registro de remoción ante terceros",
+      "valor probatorio de actas y creación de cuentas contables",
+      "apoderados generales en junta directiva de sociedades anónimas",
+      "compatibilidad entre ser miembro de junta directiva y representante legal",
+      "remuneración de miembros principales y suplentes de junta directiva",
+      "designación del presidente de la asamblea general de accionistas",
+      "cómputo de días hábiles para convocatorias a asambleas y juntas",
+      "mayorías para elección de representante legal y revisor fiscal en segunda convocatoria",
+      "formalidades de convocatoria a asamblea de accionistas",
+      "reuniones de segunda convocatoria y cómputo de plazos en días hábiles",
+      "incompatibilidades e inhabilidades para representar acciones ajenas en reuniones de asamblea",
+      "reuniones por derecho propio y mayorías para reformas estatutarias",
+      "renuncia a la junta directiva y efectos frente al registro mercantil",
+      "Firmas necesarias para inscripción de actas en registro mercantil",
+      "mayorías en reuniones de junta directiva, cálculo de mayoría absoluta",
+      "delegación de funciones entre asamblea y junta directiva para aprobación de reglamento de suscripción",
+      "reuniones de SAS cuando accionista está en estado de coma, representación legal",
+      "actuación de suplentes numéricos en junta directiva y quórum",
+      "Mayorías en juntas de socios y protección contra abuso",
+      "citación a segunda convocatoria en sociedades limitadas, términos estatutarios vs código de comercio",
+      "actas de decisiones en SAS con accionista único"
+    ],
+    "OTRO": [
+      "uniones temporales - naturaleza jurídica y aspectos contractuales",
+      "programas de transparencia ética empresarial y contacto con servidores públicos",
+      "decreto reglamentario del sector comercio - normatividad general",
+      "investigación académica en procesos concursales - respuesta metodológica"
+    ],
+    "CAPITAL_APORTES": [
+      "autorización para colocación de acciones en reserva en sociedades bajo control",
+      "autorización de disminución de capital en empresas de servicios públicos y competencia residual",
+      "emisión de acciones - características y requisitos para las sociedades",
+      "aporte de acciones como capital social en constitución de SAS",
+      "emisión de acciones privilegiadas, definición, creación y requisitos",
+      "inversión suplementaria al capital asignado en sucursales de sociedades extranjeras",
+      "autorización de colocación de acciones por Supersociedades según tipo de sociedad vigilada",
+      "aportes de derechos hereditarios y nuda propiedad a sociedades comerciales",
+      "colocación de acciones en reserva y oferta pública de adquisición",
+      "proporción entre capital suscrito y pagado con el patrimonio",
+      "emisión y colocación de acciones sin reglamento y competencias de asamblea vs junta directiva",
+      "presunción de perjuicios por incumplimiento en pago de acciones",
+      "emisión de acciones en SAS y aumento de capital",
+      "oferta privada de acciones y suscripción en SAS",
+      "aporte de bienes en comodato para pago de acciones",
+      "revocación de decisiones de capitalización y funciones del representante legal",
+      "prohibición de aumento de capital durante el proceso de liquidación societaria"
+    ],
+    "ADMINISTRADORES": [
+      "conflicto de intereses en contratación con sociedades vinculadas, autorización del órgano social",
+      "incompatibilidad de administradores en sociedades de familia",
+      "ejercicio simultáneo de representación legal en múltiples empresas",
+      "compatibilidad entre miembro de junta directiva y representante legal, prohibiciones y renuncias de honorarios",
+      "deber de lealtad entre socios y fusión abreviada en SAS",
+      "criterios para clasificar y reconocer la figura del administrador de hecho, responsabilidad por acciones y omisiones",
+      "diferencia entre representante legal y mandatario, inaplicabilidad de prohibiciones del mandato al representante legal",
+      "ejercicio de la representación legal por parte de representantes legales suplentes",
+      "prohibición de votar balances cuando el administrador es socio mayoritario",
+      "efectos del registro de nombramiento de representante legal",
+      "renuncia del representante legal e inscripción en registro mercantil",
+      "inhabilidades para que empleados administrativos sean socios",
+      "acción social de responsabilidad contra administradores, mayorías requeridas y procedimiento",
+      "compatibilidad entre ser contador y representante legal de la misma sociedad"
+    ],
+    "INSOLVENCIA": [
+      "funciones del promotor en proceso de reorganización",
+      "aplicación del artículo 17 de la Ley 1116 en pago por terceros",
+      "características y procesos de insolvencia empresarial",
+      "requisitos para acceder al régimen de insolvencia Ley 1116 de 2006",
+      "aspectos relacionados con liquidación judicial, inventario de activos y entrega de bienes arrendados",
+      "tratamiento de garantías mobiliarias en procesos de reorganización empresarial",
+      "acreencias en reestructuración bajo Ley 550, fecha de corte",
+      "límites a quitas en procesos de reorganización empresarial",
+      "mecanismos extraordinarios de salvamento en reorganización empresarial COVID-19",
+      "tratamiento de insolvencia de personas naturales no comerciantes",
+      "créditos a favor de propiedad horizontal en proceso de reorganización Ley 550",
+      "contratación con el Estado por sociedades en acuerdo de reestructuración",
+      "procedimientos ante falta de liquidez para atender obligaciones",
+      "liquidación obligatoria - terminación por fuerza mayor",
+      "aplicación de Ley 1116 en procesos concursales iniciados bajo Ley 222",
+      "mayorías requeridas para aprobación de descarga de pasivos",
+      "pólizas de seguro de cumplimiento en proceso de reorganización",
+      "autorización para disposición de bienes en proceso concordatario",
+      "naturaleza del promotor y liquidador en patrimonios autónomos fiduciarios sujetos a régimen de insolvencia",
+      "régimen de insolvencia y efectos de renuncia de administradores",
+      "reforma de acuerdos de reestructuración bajo Ley 550",
+      "determinación de derechos de voto y acreencias en acuerdo de reestructuración empresarial",
+      "retención de dineros del deudor insolvente en proceso de reorganización",
+      "consorcios y uniones temporales en régimen de insolvencia",
+      "validez de votos extemporáneos en acuerdos de reestructuración Ley 550",
+      "indexación de obligaciones en acuerdos de reorganización empresarial",
+      "reconocimiento de créditos en liquidación obligatoria de sociedad inmobiliaria",
+      "procesos ejecutivos durante reestructuración empresarial",
+      "indemnización moratoria laboral en liquidación obligatoria",
+      "limitaciones de consulta sobre procesos de insolvencia en curso",
+      "obligaciones del deudor frente a junta provisional de acreedores en concordato",
+      "cesión de créditos dentro de procesos de reorganización empresarial, naturaleza de derechos litigiosos",
+      "límites de funciones jurisdiccionales en procesos concursales",
+      "competencia para ordenar toma de posesión de personas jurídicas de vivienda",
+      "exclusión de bienes hipotecados en procesos de reorganización empresarial",
+      "prelación de créditos en acuerdos de reestructuración bajo Ley 550"
+    ],
+    "SOCIOS_ACCIONISTAS": [
+      "derecho de inspección en SAS, convocatorias y reuniones por derecho propio",
+      "prescripción de acciones por no ejercicio de derechos y extinción adquisitiva de dominio",
+      "cesión de acciones por inversionista extranjero y representación de socios extranjeros en Colombia",
+      "derecho de inspección e información de accionistas frente al know how de la sociedad",
+      "derecho de preferencia en negociación de acciones - designación de peritos para fijación de precio",
+      "derecho de retiro por capitalización que reduce participación accionaria",
+      "donación gratuita de acciones a hijos menores de edad",
+      "cesión de cuotas sociales por dación en pago y adjudicación judicial",
+      "derecho de inspección, alcance de correspondencia y confidencialidad",
+      "procedimiento para negociación de acciones sujetas a derecho de preferencia y peritaje",
+      "cláusulas estatutarias discriminatorias en sociedad anónima - derechos de accionistas",
+      "cesión de cuotas y transformación en la misma reunión",
+      "responsabilidad limitada de socios en sociedades de responsabilidad limitada",
+      "Derecho de retiro e indivisibilidad de acciones",
+      "testimonio sobre calidad de accionista en proceso judicial y secreto comercial",
+      "venta de acciones a sociedad extranjera - colocación de nuevas acciones",
+      "enajenación de propiedad accionaria estatal y derecho de preferencia",
+      "acreditación de calidad de accionista para asamblea general cuando libros incautados",
+      "libre negociabilidad de acciones y derecho de preferencia",
+      "inscripción de enajenación de acciones nominativas en libro de registro",
+      "derecho de inspección de socios y obligaciones de información de administradores",
+      "compraventa de acciones como contrato aleatorio, naturaleza jurídica",
+      "derecho de preferencia en suscripción de acciones privilegiadas",
+      "situación del cónyuge adjudicatario de cuotas sociales sin aprobación de ingreso como socio",
+      "usufructo de acciones, pluralidad jurídica y concentración de derechos societarios",
+      "prenda sobre cuotas sociales y cesión de derechos de voto",
+      "derecho de preferencia en negociación de acciones y renuncia tácita al firmar acta",
+      "Exclusión de socio por no concretarse cesión de cuotas",
+      "exclusión de socio gestor en sociedad en comandita simple",
+      "embargo de cuotas sociales - ejercicio del derecho de preferencia en adjudicación",
+      "derecho de preferencia en venta de acciones y plazos",
+      "prohibición de fraccionamiento del voto de un mismo accionista en asambleas, excepto para SAS en elección de junta directiva",
+      "abuso del derecho de litigar por parte de accionista minoritario en el ámbito societario",
+      "representación de cuotas de socio fallecido en sociedad de responsabilidad limitada"
+    ],
+    "REFORMAS_ESTATUTARIAS": [
+      "transformación de sociedad en comandita simple a SAS y participación del socio gestor",
+      "Antelación para envío de proyectos de reformas estatutarias a socios",
+      "modificación de razón social, diferencia entre razón social y denominación social",
+      "transformación de sociedad anónima en cooperativa - imposibilidad jurídica",
+      "Reducción de capital social y autorización de Supersociedades",
+      "autorización general para escisión de sociedades vigiladas, requisitos de transparencia",
+      "autorización de fusiones por parte de Supersociedades",
+      "garantías de acreedores en proceso de fusión y continuación del trámite administrativo",
+      "disminución de capital social en sociedades anónimas, trámites y requisitos",
+      "diferencias entre fusión impropia, reconstitución y reactivación societaria",
+      "transformación de sociedad limitada a SAS y continuidad del nombramiento del revisor fiscal",
+      "transformación de sociedad limitada a SAS",
+      "experiencia contractual en procesos de escisión societaria",
+      "publicidad a acreedores en procesos de escisión y fusión",
+      "autorización para fusiones de sociedades vigiladas",
+      "reconstitución de sociedad disuelta por vencimiento de término",
+      "competencia para autorizar disminución de capital en EPS"
+    ],
+    "TIPOS_SOCIETARIOS": [
+      "conversión de sociedad limitada con un solo socio en empresa unipersonal",
+      "objeto social, definición y múltiples actividades",
+      "responsabilidad del socio gestor en sociedad en comandita simple",
+      "normatividad y características de la Sociedad por Acciones Simplificada (SAS)",
+      "negociación de acciones en sociedades de economía mixta",
+      "responsabilidad de sociedad extranjera por obligaciones de sucursal",
+      "empresa unipersonal cuando titular de cuotas es sociedad limitada",
+      "cierre de sucursal de sociedad extranjera, procedimientos y requisitos",
+      "responsabilidad de socios en sociedad limitada por obligaciones laborales y fiscales",
+      "características de sociedades en comandita y problemas de gestión",
+      "sociedad en comandita simple - fallecimiento del socio gestor - nombramiento de liquidador",
+      "terminación de empresa unipersonal e impugnación de actas",
+      "tipos de sociedades y requisitos de capital mínimo y máximo",
+      "Sucursales de sociedades extranjeras - enajenación y tratamiento contable",
+      "constitución de SAS unipersonal con socio extranjero e inversión extranjera",
+      "Responsabilidad limitada de socios - alcance del artículo 353 Código de Comercio",
+      "diferencias entre sociedad unipersonal SAS y empresa unipersonal EU",
+      "sucursales de sociedades extranjeras y designación de mandatario general",
+      "normatividad aplicable a sociedades de responsabilidad limitada",
+      "constitución de sociedad limitada con aportes en especie e industria",
+      "razón y denominación social, inclusión de nombres propios",
+      "clasificación y subordinación de empresa unipersonal en liquidación judicial",
+      "sucursales en el exterior, consolidación de estados financieros",
+      "sociedades anónimas abiertas y cerradas, diferencias conceptuales",
+      "requisitos para establecimiento de sociedades extranjeras y sucursales"
+    ],
+    "INSPECCION_VIGILANCIA": [
+      "funciones y competencia de inspección, vigilancia y control de la Superintendencia de Sociedades",
+      "implementación del SAGRILAFT - requisitos y procedimientos",
+      "conflictos societarios - participación de socios comunes en varias sociedades",
+      "aspectos relacionados con cámaras de comercio y su funcionamiento",
+      "competencia de Supersociedades frente a empresas de servicios públicos y designación de miembros de junta directiva",
+      "competencia de Supersociedades sobre consorcios y uniones temporales",
+      "alcance de vigilancia sobre sociedades en proceso de extinción de dominio",
+      "investigación administrativa solicitada por asociados ante hechos violatorios",
+      "ámbito de aplicación de SAGRILAFT para operadores de libranza",
+      "calificación de microempresas y facultades de la Superintendencia",
+      "competencia de Supersociedades para conocer irregularidades societarias en sede administrativa",
+      "procedimiento de toma de posesión por captaciones no autorizadas",
+      "requisitos para oficial de cumplimiento SAGRILAFT, incompatibilidades",
+      "causales de vigilancia por Decreto 4350 de 2006, umbrales de activos e ingresos",
+      "alcance y limitaciones de las facultades de verificación del origen del capital societario por parte de la Supersociedades",
+      "falta de competencia para franquicias y ventas de activos",
+      "competencias de Supersociedades y registro de empresas",
+      "límites de competencia, empresas de juegos de suerte y azar",
+      "régimen de empresas multinivel y ventas por catálogo",
+      "incompetencia para pronunciarse sobre contratos de franquicia comercial",
+      "competencia de Supersociedades para sociedades comerciales vs entidades sin ánimo de lucro",
+      "funciones generales de la Superintendencia de Sociedades",
+      "oficial de cumplimiento en SAGRILAFT - incompatibilidades con órganos sociales",
+      "alcance de la inspección, vigilancia y control de sociedades comerciales por parte de Supersociedades",
+      "Competencia de Supersociedades para validar decisiones sociales específicas",
+      "competencias de la Superintendencia de Sociedades y limitaciones de jurisdicción",
+      "función de consultas generales y abstractas de la oficina jurídica",
+      "sociedades vigiladas por Supersociedades y criterios de vigilancia",
+      "competencia sobre exención tributaria en operaciones de factoring",
+      "límites de competencia de Supersociedades en consultas sobre asesoría societaria",
+      "traslado por competencia a Superintendencia de Puertos y Transportes",
+      "Competencia de Supersociedades sobre empresas industriales y comerciales del Estado",
+      "incompetencia para declarar validez de actos en sociedad liquidada vigilada por otra superintendencia",
+      "competencia entre Superintendencia de Sociedades y Superintendencia de Puertos y Transporte",
+      "causales de vigilancia de sociedades según Decreto 4350 de 2006",
+      "competencia para vigilancia de sociedades de construcción de vivienda",
+      "inexistencia de trámites ante Supersociedades para constitución de sociedades comerciales",
+      "funciones jurisdiccionales de Supersociedades en procesos concursales",
+      "condiciones y procedimientos para vigilancia de oficio por parte de Supersociedades y cláusulas compromisorias",
+      "conflicto entre socios - mecanismos de conciliación",
+      "función de vigilancia y criterios objetivos para sujeción a supervisión",
+      "competencia de Supersociedades respecto de MIPYMES, certificación y vigilancia"
+    ],
+    "REGIMEN_CAMBIARIO": [
+      "inversión extranjera directa cuando residente colombiano pierde calidad de residente cambiario",
+      "capitalización de deuda en sucursal y registro de inversión extranjera",
+      "ejecución de garantía fiduciaria y sustitución de titulares de inversión extranjera"
+    ],
+    "UTILIDADES_DIVIDENDOS": [
+      "pago de dividendos en acciones a valor intrínseco en sociedades de economía mixta",
+      "reservas estatutarias en sucursales de sociedad extranjera",
+      "protección de accionistas minoritarios frente a no distribución de utilidades",
+      "Dividendos no reclamados e intereses por atraso en el pago",
+      "titularidad de dividendos pendientes durante negociación de acciones"
+    ],
+    "DISOLUCION_LIQUIDACION": [
+      "nombramiento de liquidador cuando no hay representante legal ni se conoce paradero de socios",
+      "uso de prima en colocación para enjuagar pérdidas tras derogación de causal de disolución",
+      "Resciliación del contrato de sociedad antes de inscripción",
+      "suscripción de acciones por sociedad en liquidación privada",
+      "disminución de capital para enervar causal de disolución por pérdidas",
+      "reactivación de sociedad en estado de liquidación por declaratoria de no operatividad",
+      "liquidación privada versus judicial - procedimientos aplicables",
+      "transformación societaria y cambio de objeto social durante liquidación voluntaria",
+      "proceso de liquidación voluntaria y competencia entre superintendencias",
+      "actos permitidos durante liquidación voluntaria, hipotecas",
+      "revocación de la decisión de liquidación voluntaria y reactivación societaria",
+      "obligatoriedad del trámite liquidatorio inmediato tras disolución",
+      "acciones judiciales para dissolución cuando no se localiza representante legal",
+      "liquidación de sociedades de hecho y valor probatorio de las declaraciones de renta en la asignación de bienes",
+      "aspectos relacionados con liquidación privada o voluntaria, adjudicación de activos",
+      "manejo de créditos litigiosos en liquidación voluntaria",
+      "representante legal como liquidador de sociedad",
+      "distribución del remanente y acta final de liquidación",
+      "actuación del representante legal en liquidación privada y rendición de cuentas",
+      "reactivación de sociedad limitada en liquidación, porcentajes de voto",
+      "obligaciones del liquidador respecto de obligaciones ambientales adquiridas antes de la disolución",
+      "liquidación judicial de sociedades cuando no se ubica socio mayoritario",
+      "reconstitución de sociedad disuelta por vencimiento de término",
+      "Procedimientos técnicos y jurídicos para liquidación de sociedad anónima",
+      "disolución y liquidación de sociedad constructora con régimen de propiedad horizontal",
+      "causales de disolución en sociedad anónima y efectos de actos durante disolución",
+      "venta de activos en proceso liquidatorio y obligaciones pensionales",
+      "vigencia de avalúos técnicos en procesos de liquidación obligatoria",
+      "causales de disolución - sociedad anónima inactiva por problemas financieros",
+      "permanencia de la junta directiva en sociedades disueltas y en liquidación",
+      "destino de acciones en liquidación judicial, adjudicación por liquidador y derechos de preferencia",
+      "adjudicación de bienes en liquidación y sociedades de hecho",
+      "vinculación de controlante en liquidación, tránsito a liquidación judicial",
+      "pago de acreencias en liquidación privada voluntaria y prelación de créditos"
+    ],
+    "REVISOR_FISCAL": [
+      "Revisor fiscal simultáneo en sociedad matriz y subordinadas",
+      "funciones del revisor fiscal en sociedades en liquidación voluntaria",
+      "mayorías para realizar auditoría externa por socios minoritarios",
+      "eventos y requisitos de obligatoriedad del revisor fiscal",
+      "exigencia de firmas conjuntas del representante legal y revisor fiscal",
+      "actuación del revisor fiscal frente a sociedades desaparecidas",
+      "mayorías para elección del revisor fiscal y voto en blanco"
+    ],
+    "REGISTRO_MERCANTIL": [
+      "registro de oficinas de dirección general como establecimiento de comercio"
+    ],
+    "GRUPOS_EMPRESARIALES": [
+      "situación de control en SAS y sus efectos",
+      "Fundaciones y grupo empresarial - diferencias con SAS",
+      "registro de situación de control y grupo empresarial en sucursales extranjeras",
+      "configuración y registro de situación de grupo empresarial, documentos soporte",
+      "unidad de propósito en grupos empresariales y participación de entidades sin ánimo de lucro",
+      "situación de control, presupuestos legales y mayorías decisorias",
+      "control por accionista único y consolidación de estados financieros",
+      "configuración de grupo empresarial y obligación de estados financieros consolidados",
+      "situación de control y plan de normalización de registro",
+      "normalización de registro de situaciones de control con sociedades controlantes extranjeras"
+    ],
+    "PROCEDIMIENTO": [
+      "notificaciones administrativas por medios electrónicos en actuaciones de Supersociedades",
+      "impugnación de actas de uniones temporales",
+      "conciliación extrajudicial como requisito de procedibilidad para impugnación de decisiones de asamblea en SAS",
+      "levantamiento del velo corporativo y separación patrimonial entre sociedad y socios"
+    ],
+    "ENTIDADES_SIN_ANIMO_LUCRO": [
+      "proceso liquidatorio de entidades sin ánimo de lucro",
+      "clubes sociales y deportivos - derecho de impugnación e inspección",
+      "competencia de Supersociedades sobre federaciones y gremios",
+      "derechos de voto en fundaciones durante reorganización de pasivos"
+    ],
+    "LIBROS_CONTABILIDAD": [
+      "conservación de libros y papeles del comerciante físicos y digitales",
+      "libros de comercio en archivos electrónicos y su regulación",
+      "corrección de estados financieros y reconocimiento de errores contables",
+      "destrucción de libros y papeles del comerciante - derogación de normas",
+      "supresión de la obligación de inscripción de libros de actas de junta directiva en el registro mercantil"
+    ],
+    "ILEGIBLE": [
+      "documento corrupto en formato HTML no legible",
+      "documento corrupto con contenido de archivo web ilegible"
+    ],
+    "CONTRATACION_COMERCIAL": [
+      "libranza y captación masiva de recursos del público",
+      "mercadeo multinivel, contratos de distribución bajo Ley 1700",
+      "legalidad de convenios comerciales y relación con objeto social de las sociedades",
+      "contrato de mutuo como objeto social principal en sociedades del sector real",
+      "cancelación de garantías mobiliarias después de fusión por absorción",
+      "inscripción de contratos de fiducia mercantil con fines de garantía en registro mercantil vs registro de garantías mobiliarias",
+      "garantías mobiliarias sobre salarios y sus limitaciones",
+      "contrato de prenda, solicitud de revisión de conceptos"
+    ]
+  }
+}

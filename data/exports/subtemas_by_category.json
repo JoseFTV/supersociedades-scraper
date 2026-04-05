@@ -1,0 +1,1921 @@
+{
+  "INSPECCION_VIGILANCIA": {
+    "categoria": "INSPECCION_VIGILANCIA",
+    "total_docs_analizados": 42,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.01.01",
+        "label": "competencias_supersociedades",
+        "nombre": "Competencias y límites de facultades de la Superintendencia de Sociedades",
+        "definicion": "Alcance, límites y delimitación de competencias de la Superintendencia de Sociedades frente a otras entidades, incluyendo casos de incompetencia y traslados por competencia",
+        "normatividad": [
+          "Art. 189 num. 24 Constitución Política",
+          "Art. 82-88 Ley 222 de 1995",
+          "Decreto 1080 de 1996"
+        ],
+        "frecuencia_estimada_pct": 28.5,
+        "ejemplos_observados": [
+          "conflictos competenciales con otras superintendencias",
+          "límites de jurisdicción administrativa"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.02",
+        "label": "causales_vigilancia",
+        "nombre": "Causales y criterios de vigilancia de sociedades",
+        "definicion": "Requisitos, causales y procedimientos para sujetar sociedades a vigilancia, incluyendo umbrales de activos, ingresos y otros criterios del Decreto 4350 de 2006",
+        "normatividad": [
+          "Decreto 4350 de 2006",
+          "Decreto 3100 de 1997",
+          "Art. 83-85 Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 16.7,
+        "ejemplos_observados": [
+          "cumplimiento umbrales económicos",
+          "vigilancia de oficio"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.03",
+        "label": "investigaciones_administrativas",
+        "nombre": "Investigaciones administrativas y procedimientos sancionatorios",
+        "definicion": "Procedimientos de investigación administrativa, solicitudes de asociados por hechos violatorios y actuaciones administrativas de la Superintendencia",
+        "normatividad": [
+          "Art. 83-86 Ley 222 de 1995",
+          "Decreto 1080 de 1996",
+          "Código Contencioso Administrativo"
+        ],
+        "frecuencia_estimada_pct": 14.3,
+        "ejemplos_observados": [
+          "solicitudes de investigación por asociados",
+          "hechos violatorios de estatutos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.04",
+        "label": "funciones_generales_supersociedades",
+        "nombre": "Funciones generales de inspección, vigilancia y control",
+        "definicion": "Descripción y alcance de las funciones generales de la Superintendencia de Sociedades en materia de inspección, vigilancia y control de sociedades comerciales",
+        "normatividad": [
+          "Art. 82 Ley 222 de 1995",
+          "Art. 189 num. 24 Constitución Política",
+          "Decreto 3100 de 1997"
+        ],
+        "frecuencia_estimada_pct": 11.9,
+        "ejemplos_observados": [
+          "consultas sobre funciones institucionales",
+          "alcance de inspección y vigilancia"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.05",
+        "label": "sagrilaft",
+        "nombre": "Sistema de Autocontrol y Gestión del Riesgo Integral SAGRILAFT",
+        "definicion": "Implementación, requisitos y aspectos relacionados con el SAGRILAFT, incluyendo oficial de cumplimiento y ámbito de aplicación",
+        "normatividad": [
+          "Circular Externa 100-000016 de 2020",
+          "Ley 1762 de 2015",
+          "Decreto 1674 de 2016"
+        ],
+        "frecuencia_estimada_pct": 11.9,
+        "ejemplos_observados": [
+          "requisitos oficial de cumplimiento",
+          "implementación en operadores de libranza"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.06",
+        "label": "consultas_conceptos_generales",
+        "nombre": "Función de consultas y conceptos generales",
+        "definicion": "Alcance y limitaciones de la función consultiva de la Superintendencia, incluyendo conceptos generales y abstractos sobre materias de competencia",
+        "normatividad": [
+          "Art. 25 Código Contencioso Administrativo",
+          "Art. 28 Ley 1755 de 2015",
+          "Decreto 1080 de 1996"
+        ],
+        "frecuencia_estimada_pct": 9.5,
+        "ejemplos_observados": [
+          "consultas abstractas",
+          "limitaciones para casos concretos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.07",
+        "label": "sociedades_especiales",
+        "nombre": "Vigilancia de sociedades con regímenes especiales",
+        "definicion": "Competencia sobre sociedades con características especiales como empresas industriales y comerciales del Estado, empresas de servicios públicos, multinivel y otros regímenes específicos",
+        "normatividad": [
+          "Ley 1700 de 2013",
+          "Decreto 24 de 2016",
+          "Ley 142 de 1994"
+        ],
+        "frecuencia_estimada_pct": 7.1,
+        "ejemplos_observados": [
+          "empresas multinivel",
+          "empresas industriales y comerciales del Estado"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.01.08",
+        "label": "otro_inspeccion_vigilancia",
+        "nombre": "Otros aspectos de inspección y vigilancia",
+        "definicion": "Otros temas relacionados con inspección y vigilancia no cubiertos en los subtemas anteriores, incluyendo aspectos residuales y casos especiales",
+        "normatividad": [
+          "Ley 222 de 1995",
+          "Decretos reglamentarios",
+          "Normatividad sectorial"
+        ],
+        "frecuencia_estimada_pct": 0.1,
+        "ejemplos_observados": [
+          "casos atípicos",
+          "consultas diversas no clasificables"
+        ]
+      }
+    ]
+  },
+  "INSOLVENCIA": {
+    "categoria": "TX.SOC.02",
+    "total_docs_analizados": 36,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.02.01",
+        "label": "admision_reorganizacion",
+        "nombre": "Admisión y trámite de procesos de reorganización empresarial",
+        "definicion": "Aspectos relacionados con requisitos, procedimientos y trámites para acceder al régimen de insolvencia, incluyendo reorganización empresarial bajo Ley 1116 de 2006 y acuerdos de reestructuración bajo Ley 550 de 1999",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 550 de 1999",
+          "Decreto 560 de 2020"
+        ],
+        "frecuencia_estimada_pct": 22.0,
+        "ejemplos_observados": [
+          "requisitos acceso régimen insolvencia",
+          "procedimientos admisión reorganización",
+          "trámites reestructuración Ley 550"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.02",
+        "label": "acreencias_derechos_voto",
+        "nombre": "Determinación de acreencias y derechos de voto",
+        "definicion": "Procesos de reconocimiento, graduación y calificación de créditos, determinación de derechos de voto, cesión de créditos y prelación de acreencias en procesos concursales",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 550 de 1999",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 19.0,
+        "ejemplos_observados": [
+          "reconocimiento créditos liquidación",
+          "determinación derechos voto",
+          "cesión créditos proceso reorganización"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.03",
+        "label": "liquidacion_judicial",
+        "nombre": "Procesos de liquidación judicial y obligatoria",
+        "definicion": "Aspectos relacionados con liquidación judicial y obligatoria, incluyendo inventarios, realización de activos, indemnizaciones laborales y terminación por fuerza mayor",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 222 de 1995",
+          "Código Sustantivo del Trabajo"
+        ],
+        "frecuencia_estimada_pct": 14.0,
+        "ejemplos_observados": [
+          "inventario activos liquidación",
+          "indemnización moratoria laboral",
+          "terminación por fuerza mayor"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.04",
+        "label": "garantias_reales",
+        "nombre": "Tratamiento de garantías reales en procesos concursales",
+        "definicion": "Manejo de garantías hipotecarias, mobiliarias y demás garantías reales en procesos de insolvencia, incluyendo exclusión de bienes y ejecución separada",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 1676 de 2013",
+          "Código Civil"
+        ],
+        "frecuencia_estimada_pct": 11.0,
+        "ejemplos_observados": [
+          "exclusión bienes hipotecados",
+          "garantías mobiliarias concurso",
+          "ejecución garantías reales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.05",
+        "label": "funciones_auxiliares_justicia",
+        "nombre": "Funciones y actuaciones de auxiliares de la justicia",
+        "definicion": "Roles, competencias y limitaciones de promotores, liquidadores y demás auxiliares de la justicia en procesos concursales, incluyendo patrimonios autónomos",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 1564 de 2012"
+        ],
+        "frecuencia_estimada_pct": 9.0,
+        "ejemplos_observados": [
+          "funciones promotor reorganización",
+          "naturaleza promotor patrimonios autónomos",
+          "limitaciones funciones jurisdiccionales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.06",
+        "label": "acuerdos_aprobacion_modificacion",
+        "nombre": "Aprobación y modificación de acuerdos concursales",
+        "definicion": "Mayorías requeridas, votación, reforma y modificación de acuerdos de reorganización y reestructuración, incluyendo quitas y descarga de pasivos",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 550 de 1999",
+          "Decreto 560 de 2020"
+        ],
+        "frecuencia_estimada_pct": 8.0,
+        "ejemplos_observados": [
+          "mayorías descarga pasivos",
+          "votos extemporáneos acuerdos",
+          "reforma acuerdos reestructuración"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.07",
+        "label": "efectos_procesos_ejecutivos",
+        "nombre": "Efectos en procesos ejecutivos y jurisdiccionales",
+        "definicion": "Impacto de los procesos concursales en procesos ejecutivos, acciones judiciales, competencia jurisdiccional y contratación con el Estado",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 80 de 1993",
+          "Código General del Proceso"
+        ],
+        "frecuencia_estimada_pct": 8.0,
+        "ejemplos_observados": [
+          "procesos ejecutivos durante reestructuración",
+          "contratación Estado reorganización",
+          "retención dineros deudor"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.08",
+        "label": "regimenes_especiales",
+        "nombre": "Regímenes especiales y decretos de emergencia",
+        "definicion": "Aplicación de mecanismos extraordinarios de salvamento por emergencia económica, COVID-19 y otros regímenes especiales de insolvencia",
+        "normatividad": [
+          "Decreto 560 de 2020",
+          "Decreto 772 de 2020",
+          "Ley 1116 de 2006"
+        ],
+        "frecuencia_estimada_pct": 6.0,
+        "ejemplos_observados": [
+          "mecanismos extraordinarios salvamento COVID-19",
+          "renegociación categorías decreto 560",
+          "aplicación decretos emergencia"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.09",
+        "label": "indexacion_obligaciones",
+        "nombre": "Indexación y actualización de obligaciones",
+        "definicion": "Tratamiento de la indexación, actualización monetaria y reconocimiento de intereses en obligaciones dentro de procesos concursales",
+        "normatividad": [
+          "Jurisprudencia Corte Constitucional",
+          "Ley 1116 de 2006",
+          "Ley 550 de 1999"
+        ],
+        "frecuencia_estimada_pct": 3.0,
+        "ejemplos_observados": [
+          "indexación obligaciones acuerdos reorganización",
+          "fórmula cálculo indexación",
+          "reliquidación acuerdos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.02.10",
+        "label": "otro_insolvencia",
+        "nombre": "Otros aspectos de insolvencia empresarial",
+        "definicion": "Aspectos residuales de insolvencia no clasificados en otros subtemas, incluyendo competencias especiales y situaciones particulares",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 550 de 1999",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 3.0,
+        "ejemplos_observados": [
+          "insolvencia personas naturales no comerciantes",
+          "competencia vivienda",
+          "consorcios uniones temporales"
+        ]
+      }
+    ]
+  },
+  "SOCIOS_ACCIONISTAS": {
+    "categoria": "SOCIOS_ACCIONISTAS",
+    "total_docs_analizados": 34,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.03.01",
+        "label": "derecho_retiro",
+        "nombre": "Derecho de retiro",
+        "definicion": "Ejercicio del derecho de los socios o accionistas a retirarse de la sociedad en casos específicos contemplados en la ley, sus condiciones, procedimiento y efectos patrimoniales.",
+        "normatividad": [
+          "Ley 222 de 1995 art. 12",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 8.8,
+        "ejemplos_observados": [
+          "Retiro por capitalización que reduce participación",
+          "Indivisibilidad de acciones en retiro"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.02",
+        "label": "derecho_preferencia",
+        "nombre": "Derecho de preferencia",
+        "definicion": "Derecho de los socios o accionistas a adquirir preferencialmente las participaciones o acciones que otros socios deseen enajenar, incluyendo procedimientos, plazos, peritajes y renuncias.",
+        "normatividad": [
+          "Código de Comercio art. 407",
+          "Código de Comercio art. 385"
+        ],
+        "frecuencia_estimada_pct": 20.6,
+        "ejemplos_observados": [
+          "Peritaje para fijación de precio",
+          "Renuncia tácita por firmar acta",
+          "Designación de peritos judiciales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.03",
+        "label": "cesion_negociacion_participaciones",
+        "nombre": "Cesión y negociación de participaciones",
+        "definicion": "Transferencia de cuotas sociales o acciones entre socios o a terceros, incluyendo dación en pago, adjudicación judicial, inscripción en libros y efectos jurídicos de la enajenación.",
+        "normatividad": [
+          "Código de Comercio art. 366",
+          "Código de Comercio art. 403"
+        ],
+        "frecuencia_estimada_pct": 17.6,
+        "ejemplos_observados": [
+          "Cesión por dación en pago",
+          "Adjudicación judicial",
+          "Inscripción en libro de registro"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.04",
+        "label": "derecho_inspeccion_informacion",
+        "nombre": "Derecho de inspección e información",
+        "definicion": "Derecho de los socios o accionistas a examinar libros, papeles de comercio, correspondencia y obtener información sobre los negocios sociales, incluyendo sus limitaciones y alcances.",
+        "normatividad": [
+          "Código de Comercio art. 422",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 11.8,
+        "ejemplos_observados": [
+          "Alcance de correspondencia comercial",
+          "Know how y confidencialidad",
+          "Obligaciones de administradores"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.05",
+        "label": "exclusion_socios",
+        "nombre": "Exclusión de socios",
+        "definicion": "Procedimientos y causales para la exclusión de socios de la sociedad, incluyendo casos de no concretarse cesiones de cuotas y exclusión de socios gestores en comanditas.",
+        "normatividad": [
+          "Código de Comercio",
+          "Estatutos sociales"
+        ],
+        "frecuencia_estimada_pct": 8.8,
+        "ejemplos_observados": [
+          "Exclusión por no cesión de cuotas",
+          "Permanencia de socio gestor"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.06",
+        "label": "derechos_gravamenes_participaciones",
+        "nombre": "Derechos reales y gravámenes sobre participaciones",
+        "definicion": "Constitución y efectos de usufructos, prendas, embargos y otros gravámenes sobre cuotas sociales o acciones, incluyendo el ejercicio de derechos societarios bajo estas figuras.",
+        "normatividad": [
+          "Código Civil art. 825",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 8.8,
+        "ejemplos_observados": [
+          "Usufructo de acciones",
+          "Prenda sobre cuotas sociales",
+          "Embargo de participaciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.07",
+        "label": "responsabilidad_socios",
+        "nombre": "Responsabilidad de socios",
+        "definicion": "Alcance y límites de la responsabilidad patrimonial de los socios según el tipo societario, incluyendo responsabilidad limitada y casos especiales de responsabilidad ampliada.",
+        "normatividad": [
+          "Código de Comercio art. 353",
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 5.9,
+        "ejemplos_observados": [
+          "Responsabilidad limitada por aportes",
+          "Límites de responsabilidad"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.08",
+        "label": "representacion_acreditacion_socios",
+        "nombre": "Representación y acreditación de socios",
+        "definicion": "Formas de acreditar la calidad de socio o accionista, representación en asambleas, situaciones especiales como fallecimiento, cónyuge adjudicatario y socios extranjeros.",
+        "normatividad": [
+          "Código de Comercio",
+          "Código Civil"
+        ],
+        "frecuencia_estimada_pct": 11.8,
+        "ejemplos_observados": [
+          "Representación de socio fallecido",
+          "Cónyuge adjudicatario sin aprobación",
+          "Socios extranjeros"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.09",
+        "label": "derechos_politicos_voto",
+        "nombre": "Derechos políticos y de voto",
+        "definicion": "Ejercicio del derecho de voto, fraccionamiento de voto, cláusulas discriminatorias, restricciones al voto y participación en órganos sociales según tipos societarios.",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 8.8,
+        "ejemplos_observados": [
+          "Prohibición fraccionamiento de voto",
+          "Cláusulas discriminatorias",
+          "Inhabilitación por deudas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.03.10",
+        "label": "otro_socios_accionistas",
+        "nombre": "Otros temas de socios y accionistas",
+        "definicion": "Temas residuales relacionados con socios y accionistas que no se clasifican en las categorías anteriores, incluyendo contratos aleatorios, abuso del derecho y temas diversos.",
+        "normatividad": [
+          "Código Civil",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 2.9,
+        "ejemplos_observados": [
+          "Compraventa de acciones como contrato aleatorio",
+          "Abuso del derecho de litigar"
+        ]
+      }
+    ]
+  },
+  "DISOLUCION_LIQUIDACION": {
+    "categoria": "TX.SOC.04",
+    "total_docs_analizados": 34,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.04.01",
+        "label": "liquidacion_voluntaria_privada",
+        "nombre": "Liquidación voluntaria o privada de sociedades",
+        "definicion": "Procesos de liquidación iniciados por decisión de los socios, incluyendo procedimientos, adjudicación de activos, manejo de pasivos, funciones del liquidador, distribución de remanentes y cuenta final de liquidación",
+        "normatividad": [
+          "Código de Comercio Arts. 218-242",
+          "Ley 222 de 1995",
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 35.0,
+        "ejemplos_observados": [
+          "adjudicación de activos en liquidación privada",
+          "distribución del remanente y acta final",
+          "actuación del representante legal como liquidador"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.04.02",
+        "label": "liquidacion_judicial_forzosa",
+        "nombre": "Liquidación judicial y forzosa",
+        "definicion": "Procesos de liquidación ordenados judicialmente o por autoridad administrativa, incluyendo avalúos, adjudicación de bienes por liquidador, vinculación de controlantes y tránsito entre tipos de liquidación",
+        "normatividad": [
+          "Ley 1116 de 2006",
+          "Ley 222 de 1995",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "avalúos técnicos en liquidación obligatoria",
+          "adjudicación de acciones en liquidación judicial",
+          "vinculación de controlante en liquidación"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.04.03",
+        "label": "causales_disolucion",
+        "nombre": "Causales de disolución societaria",
+        "definicion": "Análisis de las distintas causales que generan la disolución de sociedades, incluyendo pérdidas, vencimiento de término, imposibilidad de desarrollar objeto social, no operatividad y mecanismos para enervarlas",
+        "normatividad": [
+          "Código de Comercio Arts. 457-459",
+          "Ley 1258 de 2008 Art. 34",
+          "Ley 2069 de 2020"
+        ],
+        "frecuencia_estimada_pct": 18.0,
+        "ejemplos_observados": [
+          "disolución por pérdidas y su enervación",
+          "disolución por vencimiento de término",
+          "causal de no operatividad"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.04.04",
+        "label": "reactivacion_societaria",
+        "nombre": "Reactivación y reconstitución societaria",
+        "definicion": "Procedimientos para revertir la decisión de liquidación, reactivar sociedades disueltas o en liquidación, y reconstitución de sociedades que han cumplido su término de duración",
+        "normatividad": [
+          "Ley 1429 de 2010 Art. 29",
+          "Código de Comercio",
+          "Jurisprudencia de Supersociedades"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "revocación de liquidación voluntaria",
+          "reactivación de sociedad por no operatividad",
+          "reconstitución por vencimiento de término"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.04.05",
+        "label": "problemas_procedimentales",
+        "nombre": "Problemas procedimentales en liquidación",
+        "definicion": "Situaciones anómalas durante procesos liquidatorios como ausencia de socios, imposibilidad de localizar representantes legales, nombramiento de liquidadores cuando no hay órganos sociales funcionando",
+        "normatividad": [
+          "Código de Comercio",
+          "Código General del Proceso",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "liquidación cuando no se ubica socio mayoritario",
+          "nombramiento de liquidador sin representante legal",
+          "acciones judiciales para disolución"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.04.06",
+        "label": "aspectos_especiales_liquidacion",
+        "nombre": "Aspectos especiales en liquidación",
+        "definicion": "Temas específicos como obligaciones ambientales, pensionales, construcción con propiedad horizontal, sociedades de hecho, competencias entre superintendencias y actos permitidos durante liquidación",
+        "normatividad": [
+          "Ley 675 de 2001",
+          "Normatividad ambiental",
+          "Sistema de Seguridad Social"
+        ],
+        "frecuencia_estimada_pct": 8.0,
+        "ejemplos_observados": [
+          "obligaciones ambientales en liquidación",
+          "liquidación de constructora con propiedad horizontal",
+          "obligaciones pensionales y venta de activos"
+        ]
+      }
+    ]
+  },
+  "ORGANOS_SOCIALES": {
+    "categoria": "ORGANOS_SOCIALES",
+    "total_docs_analizados": 27,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.05.01",
+        "label": "convocatorias_y_reuniones",
+        "nombre": "Convocatorias y reuniones de órganos sociales",
+        "definicion": "Aspectos relativos a las formalidades, plazos, términos, segunda convocatoria y procedimientos para convocar y realizar reuniones de asambleas, juntas de socios y juntas directivas",
+        "normatividad": [
+          "artículo 424 C.Co.",
+          "artículo 429 C.Co.",
+          "artículo 68 Ley 222/95"
+        ],
+        "frecuencia_estimada_pct": 30.0,
+        "ejemplos_observados": [
+          "reuniones de segunda convocatoria y cómputo de días hábiles",
+          "formalidades de convocatoria a asamblea",
+          "citación a segunda convocatoria en sociedades limitadas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.05.02",
+        "label": "quorum_y_mayorias",
+        "nombre": "Quórum, mayorías y validez de decisiones",
+        "definicion": "Reglas sobre quórum deliberativo y decisorio, cálculo de mayorías absolutas, mayorías especiales para reformas y validez de las decisiones adoptadas por los órganos sociales",
+        "normatividad": [
+          "artículo 437 C.Co.",
+          "artículo 68 Ley 222/95",
+          "artículo 184 C.Co."
+        ],
+        "frecuencia_estimada_pct": 22.0,
+        "ejemplos_observados": [
+          "mayorías en juntas directiva",
+          "cálculo de quórum cuando acciones son impares",
+          "mayorías en juntas de socios y protección contra abuso"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.05.03",
+        "label": "junta_directiva",
+        "nombre": "Junta directiva - composición y funcionamiento",
+        "definicion": "Aspectos específicos del funcionamiento de juntas directivas incluyendo actuación de suplentes, nombramiento, remoción, incompatibilidades, remuneración y delegación de funciones",
+        "normatividad": [
+          "artículo 437 C.Co.",
+          "artículo 22 Ley 222/95",
+          "artículo 197 C.Co."
+        ],
+        "frecuencia_estimada_pct": 18.5,
+        "ejemplos_observados": [
+          "actuación de suplentes numéricos",
+          "renuncia a junta directiva",
+          "compatibilidad representante legal y miembro junta",
+          "remuneración de miembros"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.05.04",
+        "label": "actas_y_registro",
+        "nombre": "Actas y registro mercantil",
+        "definicion": "Obligaciones de elaboración, contenido, aprobación y registro de actas de reuniones de órganos sociales, así como las formalidades para su inscripción en el registro mercantil",
+        "normatividad": [
+          "artículo 189 C.Co.",
+          "artículo 19 C.Co.",
+          "artículo 45 Ley 1258/08"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "actas en SAS con accionista único",
+          "firmas necesarias para inscripción",
+          "consecuencias por no llevar actas",
+          "valor probatorio de actas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.05.05",
+        "label": "representacion_y_poderes",
+        "nombre": "Representación legal y poderes",
+        "definicion": "Aspectos relacionados con la representación en órganos sociales, designación y efectos del registro de representantes legales, apoderados generales y representación de acciones ajenas",
+        "normatividad": [
+          "artículo 184 C.Co.",
+          "artículo 197 C.Co.",
+          "Ley 1258/08"
+        ],
+        "frecuencia_estimada_pct": 11.0,
+        "ejemplos_observados": [
+          "representación cuando accionista en coma",
+          "incompatibilidades de apoderados",
+          "efectos del registro de remoción",
+          "apoderados generales en junta directiva"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.05.06",
+        "label": "otro_organos_sociales",
+        "nombre": "Otros aspectos de órganos sociales",
+        "definicion": "Temas residuales relacionados con órganos sociales no contemplados en los subtemas anteriores, incluyendo situaciones especiales de tipos societarios específicos",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 222/95",
+          "Ley 1258/08"
+        ],
+        "frecuencia_estimada_pct": 3.5,
+        "ejemplos_observados": [
+          "fondos ganaderos bajo reorganización",
+          "designación presidente asamblea",
+          "capacidad societaria para participar en juntas"
+        ]
+      }
+    ]
+  },
+  "TIPOS_SOCIETARIOS": {
+    "categoria": "TX.SOC.06",
+    "total_docs_analizados": 25,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.06.01",
+        "label": "sociedades_anonimas",
+        "nombre": "Sociedades Anónimas",
+        "definicion": "Consultas sobre constitución, características, clasificación (abiertas/cerradas), funcionamiento y regulación de sociedades anónimas",
+        "normatividad": [
+          "Código de Comercio Libro II",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "diferencias entre SA abiertas y cerradas",
+          "aplicación normativa supletoria"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.02",
+        "label": "sociedades_limitada",
+        "nombre": "Sociedades de Responsabilidad Limitada",
+        "definicion": "Aspectos constitutivos, operativos y normativos de sociedades limitadas, incluyendo responsabilidad de socios y aportes",
+        "normatividad": [
+          "Código de Comercio art. 353 y ss.",
+          "art. 372 del C.Co."
+        ],
+        "frecuencia_estimada_pct": 16.0,
+        "ejemplos_observados": [
+          "constitución con aportes en especie e industria",
+          "responsabilidad limitada de socios",
+          "normatividad aplicable supletoria"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.03",
+        "label": "sociedades_comandita",
+        "nombre": "Sociedades en Comandita",
+        "definicion": "Características, funcionamiento, responsabilidad de socios gestores y comanditarios en sociedades en comandita simple y por acciones",
+        "normatividad": [
+          "Código de Comercio Título V",
+          "arts. 323 y ss. del C.Co."
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "problemas de gestión y control",
+          "fallecimiento del socio gestor",
+          "responsabilidad del socio gestor"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.04",
+        "label": "sociedades_sas",
+        "nombre": "Sociedades por Acciones Simplificada - SAS",
+        "definicion": "Constitución, características, normatividad y funcionamiento de las SAS, incluyendo SAS unipersonales",
+        "normatividad": [
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "normatividad y características SAS",
+          "constitución SAS unipersonal con socio extranjero",
+          "diferencias con empresa unipersonal"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.05",
+        "label": "empresa_unipersonal",
+        "nombre": "Empresa Unipersonal",
+        "definicion": "Constitución, funcionamiento, terminación y aspectos jurídicos de empresas unipersonales creadas bajo la Ley 222 de 1995",
+        "normatividad": [
+          "Ley 222 de 1995 art. 71 y ss."
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "conversión de sociedad limitada unisocial",
+          "titular persona jurídica",
+          "terminación e impugnación de actas",
+          "clasificación en liquidación judicial"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.06",
+        "label": "sociedades_extranjeras_sucursales",
+        "nombre": "Sociedades Extranjeras y Sucursales",
+        "definicion": "Establecimiento, funcionamiento, responsabilidad, cierre y aspectos jurídicos de sociedades extranjeras y sus sucursales en Colombia",
+        "normatividad": [
+          "Código de Comercio Título VIII art. 469 y ss.",
+          "art. 485, 492, 497"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "enajenación y tratamiento contable",
+          "mandatario general",
+          "consolidación estados financieros",
+          "responsabilidad por obligaciones",
+          "cierre de sucursal"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.07",
+        "label": "sociedades_economia_mixta",
+        "nombre": "Sociedades de Economía Mixta",
+        "definicion": "Aspectos jurídicos específicos de sociedades de economía mixta, incluyendo negociación de acciones y procedimientos especiales",
+        "normatividad": [
+          "Ley 489 de 1998 arts. 68-69",
+          "Ley 226 de 1995"
+        ],
+        "frecuencia_estimada_pct": 4.0,
+        "ejemplos_observados": [
+          "negociación de acciones en liquidación",
+          "clasificación de empresa unipersonal con capital público"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.08",
+        "label": "elementos_constitutivos_generales",
+        "nombre": "Elementos Constitutivos Generales",
+        "definicion": "Aspectos transversales de constitución societaria: razón social, denominación, objeto social, capital mínimo y máximo",
+        "normatividad": [
+          "Código de Comercio art. 110",
+          "Decreto 410 de 1971 Libro II"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "razón y denominación social con nombres propios",
+          "objeto social con múltiples actividades",
+          "tipos societarios y capital mínimo/máximo"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.06.09",
+        "label": "otro_tipos_societarios",
+        "nombre": "Otros Aspectos de Tipos Societarios",
+        "definicion": "Consultas sobre tipos societarios no clasificadas en las categorías anteriores o aspectos residuales de derecho societario",
+        "normatividad": [
+          "Código de Comercio",
+          "Leyes especiales"
+        ],
+        "frecuencia_estimada_pct": 2.0,
+        "ejemplos_observados": [
+          "aspectos normativos generales no específicos"
+        ]
+      }
+    ]
+  },
+  "REFORMAS_ESTATUTARIAS": {
+    "categoria": "TX.SOC.07",
+    "total_docs_analizados": 18,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.07.01",
+        "label": "fusion_escision_autorizacion",
+        "nombre": "Fusión y escisión - Autorizaciones y procedimientos",
+        "definicion": "Comprende los procesos de fusión y escisión de sociedades, incluyendo requisitos de autorización por parte de Supersociedades, procedimientos administrativos, publicidad a acreedores, garantías y aspectos técnicos del trámite.",
+        "normatividad": [
+          "Ley 222 de 1995 art. 84-86",
+          "Código de Comercio art. 170-180",
+          "Decreto 4350 de 2006",
+          "Circular Externa 07 de 2001"
+        ],
+        "frecuencia_estimada_pct": 35.0,
+        "ejemplos_observados": [
+          "autorización fusiones sociedades vigiladas",
+          "publicidad acreedores en escisión",
+          "garantías en procesos de fusión"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.07.02",
+        "label": "transformacion_societaria",
+        "nombre": "Transformación de tipos societarios",
+        "definicion": "Abarca los procesos de transformación entre diferentes tipos societarios, especialmente de sociedades limitadas y anónimas a SAS, incluyendo efectos sobre órganos sociales, revisoría fiscal y continuidad jurídica.",
+        "normatividad": [
+          "Ley 1258 de 2008",
+          "Código de Comercio Título II",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "transformación limitada a SAS",
+          "comandita simple a SAS",
+          "continuidad revisoría fiscal"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.07.03",
+        "label": "capital_social_modificaciones",
+        "nombre": "Modificaciones del capital social",
+        "definicion": "Incluye procesos de aumento y disminución del capital social, readquisición de acciones, reembolso de aportes y los requisitos de autorización según el tipo societario y sector de actividad.",
+        "normatividad": [
+          "Código de Comercio art. 122, 145",
+          "Ley 222 de 1995 art. 86",
+          "Decreto 1086 de 1996"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "reducción capital con reembolso",
+          "autorización disminución capital EPS",
+          "readquisición de acciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.07.04",
+        "label": "reconstitucion_reactivacion",
+        "nombre": "Reconstitución y reactivación societaria",
+        "definicion": "Comprende los mecanismos de reconstitución de sociedades disueltas y reactivación de sociedades, incluyendo las diferencias conceptuales con la fusión impropia y sus respectivos procedimientos legales.",
+        "normatividad": [
+          "Código de Comercio art. 250",
+          "Ley 1429 de 2010 art. 29",
+          "Código de Comercio art. 180"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "reconstitución sociedad vencida",
+          "diferencias fusión impropia-reconstitución",
+          "reactivación vs reconstitución"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.07.05",
+        "label": "otros_aspectos_reformas",
+        "nombre": "Otros aspectos de reformas estatutarias",
+        "definicion": "Incluye modificaciones de denominación o razón social, procedimientos de convocatoria para reformas, antelación de proyectos, experiencia contractual en procesos societarios y otros aspectos diversos de reformas estatutarias.",
+        "normatividad": [
+          "Código de Comercio art. 110, 303, 357, 373",
+          "Ley 222 de 1995",
+          "normativa de contratación pública"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "modificación razón social",
+          "antelación proyectos reformas",
+          "experiencia contractual en escisión"
+        ]
+      }
+    ]
+  },
+  "CAPITAL_APORTES": {
+    "categoria": "CAPITAL_APORTES",
+    "total_docs_analizados": 17,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.08.01",
+        "label": "emision_colocacion_acciones",
+        "nombre": "Emisión y colocación de acciones",
+        "definicion": "Procesos de emisión, colocación y suscripción de acciones, incluyendo reglamentos, autorizaciones requeridas, acciones en reserva y competencias de órganos sociales",
+        "normatividad": [
+          "Código de Comercio arts. 385, 390",
+          "Ley 222 de 1995 arts. 82, 83"
+        ],
+        "frecuencia_estimada_pct": 35.0,
+        "ejemplos_observados": [
+          "emisión sin reglamento",
+          "autorización Supersociedades",
+          "acciones en reserva"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.08.02",
+        "label": "aportes_tipos_bienes",
+        "nombre": "Aportes de bienes y derechos",
+        "definicion": "Aportes al capital social mediante diferentes tipos de bienes, incluyendo bienes en especie, derechos hereditarios, nuda propiedad, acciones de otras sociedades y bienes en comodato",
+        "normatividad": [
+          "Código de Comercio art. 98",
+          "Código de Comercio arts. 135-142"
+        ],
+        "frecuencia_estimada_pct": 18.0,
+        "ejemplos_observados": [
+          "aportes derechos hereditarios",
+          "bienes en comodato",
+          "aportes de acciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.08.03",
+        "label": "modificaciones_capital",
+        "nombre": "Modificaciones del capital social",
+        "definicion": "Aumentos y disminuciones del capital autorizado, suscrito y pagado, incluyendo capitalizaciones, reembolso de aportes y restricciones durante procesos especiales",
+        "normatividad": [
+          "Código de Comercio arts. 454-466",
+          "Ley 1116 de 2006"
+        ],
+        "frecuencia_estimada_pct": 24.0,
+        "ejemplos_observados": [
+          "aumento durante liquidación",
+          "capitalización sociedades",
+          "disminución con reembolso"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.08.04",
+        "label": "acciones_privilegiadas_especiales",
+        "nombre": "Acciones privilegiadas y especiales",
+        "definicion": "Emisión, características y derechos de acciones privilegiadas, preferenciales y otras clases especiales de acciones con derechos diferenciados",
+        "normatividad": [
+          "Código de Comercio arts. 379, 381",
+          "Decreto 410 de 1971"
+        ],
+        "frecuencia_estimada_pct": 12.0,
+        "ejemplos_observados": [
+          "acciones privilegiadas",
+          "derechos preferenciales",
+          "liquidación preferencial"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.08.05",
+        "label": "incumplimiento_pagos",
+        "nombre": "Incumplimiento en pago de acciones",
+        "definicion": "Consecuencias del incumplimiento en el pago de acciones suscritas, incluyendo presunciones de perjuicios, mora e imputación de pagos parciales",
+        "normatividad": [
+          "Código de Comercio art. 397",
+          "Código de Comercio arts. 395-398"
+        ],
+        "frecuencia_estimada_pct": 6.0,
+        "ejemplos_observados": [
+          "presunción perjuicios 20%",
+          "obligaciones vencidas",
+          "imputación pagos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.08.06",
+        "label": "otro_capital_aportes",
+        "nombre": "Otros aspectos de capital y aportes",
+        "definicion": "Aspectos específicos del régimen de capital y aportes no cubiertos en los subtemas anteriores, incluyendo proporción capital-patrimonio y temas especiales de SAS",
+        "normatividad": [
+          "Ley 1258 de 2008",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "proporción capital-patrimonio",
+          "inversión suplementaria sucursales"
+        ]
+      }
+    ]
+  },
+  "ADMINISTRADORES": {
+    "categoria": "ADMINISTRADORES",
+    "total_docs_analizados": 14,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.09.01",
+        "label": "responsabilidad_administradores",
+        "nombre": "Responsabilidad de administradores",
+        "definicion": "Régimen de responsabilidad civil de administradores, incluye acción social de responsabilidad, administradores de hecho, criterios de imputación y procedimientos",
+        "normatividad": [
+          "Ley 222 de 1995 art. 23-25",
+          "Código de Comercio art. 200"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "acción social de responsabilidad contra administradores",
+          "administrador de hecho y responsabilidad por acciones y omisiones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.09.02",
+        "label": "incompatibilidades_prohibiciones",
+        "nombre": "Incompatibilidades y prohibiciones",
+        "definicion": "Incompatibilidades legales para ejercer cargos de administración, prohibiciones específicas como votación de balances, conflictos de interés y restricciones societarias",
+        "normatividad": [
+          "Código de Comercio art. 185",
+          "Ley 222 de 1995 art. 23"
+        ],
+        "frecuencia_estimada_pct": 30.0,
+        "ejemplos_observados": [
+          "incompatibilidad de administradores en sociedades de familia",
+          "prohibición de votar balances cuando el administrador es socio mayoritario",
+          "conflicto de intereses en contratación con sociedades vinculadas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.09.03",
+        "label": "representacion_legal",
+        "nombre": "Representación legal",
+        "definicion": "Aspectos del ejercicio de la representación legal, incluyendo nombramiento, registro, efectos, renuncia, representantes suplentes y ejercicio simultáneo en múltiples sociedades",
+        "normatividad": [
+          "Código de Comercio art. 196-199",
+          "Decreto 410 de 1971"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "ejercicio de representación legal por representantes suplentes",
+          "efectos del registro de nombramiento",
+          "renuncia del representante legal",
+          "ejercicio simultáneo en múltiples empresas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.09.04",
+        "label": "compatibilidad_cargos",
+        "nombre": "Compatibilidad de cargos",
+        "definicion": "Compatibilidad para el ejercicio simultáneo de diferentes cargos dentro de la misma sociedad o entre distintas entidades, incluyendo aspectos profesionales y administrativos",
+        "normatividad": [
+          "Ley 43 de 1990",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "compatibilidad entre ser contador y representante legal",
+          "compatibilidad entre miembro de junta directiva y representante legal",
+          "diferencia entre representante legal y mandatario"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.09.05",
+        "label": "otro_administradores",
+        "nombre": "Otros aspectos de administradores",
+        "definicion": "Temas residuales relacionados con administradores que no encajan en los subtemas anteriores, incluyendo aspectos específicos de deberes fiduciarios y otras materias conexas",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "deber de lealtad societario",
+          "inhabilidades para empleados administrativos como socios"
+        ]
+      }
+    ]
+  },
+  "GRUPOS_EMPRESARIALES": {
+    "categoria": "GRUPOS_EMPRESARIALES",
+    "total_docs_analizados": 10,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.10.01",
+        "label": "configuracion_requisitos_grupo",
+        "nombre": "Configuración y requisitos de grupo empresarial",
+        "definicion": "Análisis de los elementos constitutivos del grupo empresarial: control, unidad de propósito y dirección unificada, incluyendo criterios para determinar su existencia y diferenciación con otras figuras societarias",
+        "normatividad": [
+          "Art. 260-264 Código de Comercio",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 30.0,
+        "ejemplos_observados": [
+          "unidad de propósito con entidades sin ánimo de lucro",
+          "diferencias entre SAS y grupo empresarial"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.10.02",
+        "label": "situacion_control_presupuestos",
+        "nombre": "Situación de control y sus presupuestos legales",
+        "definicion": "Determinación y análisis de las situaciones de control bajo los presupuestos del artículo 27 de la Ley 222 de 1995, incluyendo participaciones mayoritarias, mayorías decisorias y presunciones de control",
+        "normatividad": [
+          "Art. 27 Ley 222 de 1995",
+          "Art. 260-261 Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "control por accionista único",
+          "mayorías decisorias superiores al 50%"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.10.03",
+        "label": "registro_obligaciones_formales",
+        "nombre": "Registro y obligaciones formales de grupos empresariales",
+        "definicion": "Procedimientos de registro ante Cámara de Comercio, obligaciones de información, estados financieros consolidados y cumplimiento de deberes formales derivados de la situación de control o grupo empresarial",
+        "normatividad": [
+          "Art. 29-30 Ley 222 de 1995",
+          "Circular Externa 100-000003 de 2021"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "inscripción situación de control",
+          "estados financieros consolidados"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.10.04",
+        "label": "plan_normalizacion_registro",
+        "nombre": "Plan de normalización del registro de control y grupos",
+        "definicion": "Aspectos específicos del plan de normalización establecido en la Circular 100-000003 de 2021, incluyendo procedimientos, plazos, capacitaciones y regularización de registros pendientes",
+        "normatividad": [
+          "Circular Externa 100-000003 de 2021"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "normalización con sociedades controlantes extranjeras",
+          "poderes especiales para representación"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.10.05",
+        "label": "sociedades_extranjeras_sucursales",
+        "nombre": "Grupos empresariales con sociedades extranjeras y sucursales",
+        "definicion": "Aspectos específicos del control y grupos empresariales cuando intervienen sociedades extranjeras, sucursales de sociedades extranjeras y la aplicación de la normativa colombiana en estos casos",
+        "normatividad": [
+          "Art. 27 Ley 222 de 1995",
+          "Art. 260 Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 8.0,
+        "ejemplos_observados": [
+          "control entre sucursales extranjeras",
+          "registro de situaciones con matriz extranjera"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.10.06",
+        "label": "otro_grupos_empresariales",
+        "nombre": "Otros aspectos de grupos empresariales",
+        "definicion": "Temas residuales relacionados con grupos empresariales que no se enmarcan en las demás categorías específicas",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 2.0,
+        "ejemplos_observados": [
+          "solicitudes de información documental",
+          "aspectos procedimentales varios"
+        ]
+      }
+    ]
+  },
+  "CONTRATACION_COMERCIAL": {
+    "categoria": "CONTRATACION_COMERCIAL",
+    "total_docs_analizados": 8,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.11.01",
+        "label": "convenios_comerciales_objeto_social",
+        "nombre": "Convenios Comerciales y Objeto Social",
+        "definicion": "Legalidad y conformidad de convenios comerciales con el objeto social de las sociedades, incluyendo programas de financiación y alianzas estratégicas entre entidades",
+        "normatividad": [
+          "Código de Comercio",
+          "Estatutos societarios"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "convenios de financiación a clientes",
+          "alianzas entre compañías de financiamiento"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.02",
+        "label": "contratos_prenda_garantias_reales",
+        "nombre": "Contratos de Prenda y Garantías Reales",
+        "definicion": "Aspectos jurídicos de contratos de prenda, garantías reales y su constitución, incluyendo la revisión de conceptos previos sobre estos contratos",
+        "normatividad": [
+          "Código Civil",
+          "Código de Comercio",
+          "Ley de Garantías Mobiliarias"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "revisión de conceptos sobre prenda",
+          "constitución de garantías reales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.03",
+        "label": "mercadeo_multinivel_distribucion",
+        "nombre": "Mercadeo Multinivel y Contratos de Distribución",
+        "definicion": "Actividades de comercialización en red o mercadeo multinivel, contratos de distribución y cesión de derechos bajo el régimen de la Ley 1700",
+        "normatividad": [
+          "Ley 1700 de 2013",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "cesión de contratos con distribuidores",
+          "contratos de venta vs distribución"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.04",
+        "label": "fiducia_mercantil_garantia",
+        "nombre": "Fiducia Mercantil con Fines de Garantía",
+        "definicion": "Contratos de fiducia mercantil constituidos con fines de garantía, su inscripción en registro mercantil vs registro de garantías mobiliarias y efectos de la publicidad",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley de Garantías Mobiliarias",
+          "Estatuto Orgánico del Sistema Financiero"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "inscripción en registro mercantil",
+          "publicidad en registro de garantías"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.05",
+        "label": "mutuo_objeto_social_principal",
+        "nombre": "Contrato de Mutuo como Objeto Social",
+        "definicion": "Viabilidad del contrato de mutuo o préstamo de dinero como actividad principal en el objeto social de sociedades del sector real, aplicable a todos los tipos societarios",
+        "normatividad": [
+          "Código de Comercio",
+          "Estatuto Orgánico del Sistema Financiero"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "mutuo como actividad principal en SAS",
+          "préstamos en sociedades comerciales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.06",
+        "label": "libranza_captacion_recursos",
+        "nombre": "Libranza y Captación de Recursos",
+        "definicion": "Operaciones de libranza, su relación con la captación masiva de recursos del público y limitaciones para entidades no vigiladas por la Superintendencia Financiera",
+        "normatividad": [
+          "Ley 1527 de 2012",
+          "Estatuto Orgánico del Sistema Financiero",
+          "Código Sustantivo del Trabajo"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "libranza y acceso al crédito",
+          "captación masiva de recursos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.07",
+        "label": "garantias_mobiliarias_salarios",
+        "nombre": "Garantías Mobiliarias sobre Salarios",
+        "definicion": "Constitución de garantías mobiliarias sobre salarios, limitaciones del Código Sustantivo del Trabajo y procedimientos de constitución",
+        "normatividad": [
+          "Ley de Garantías Mobiliarias",
+          "Código Sustantivo del Trabajo"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "garantías sobre salarios",
+          "limitaciones laborales en garantías"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.08",
+        "label": "garantias_mobiliarias_fusion",
+        "nombre": "Garantías Mobiliarias en Procesos de Fusión",
+        "definicion": "Cancelación y tratamiento de garantías mobiliarias en procesos de fusión por absorción, cuando la entidad beneficiaria pierde su personalidad jurídica",
+        "normatividad": [
+          "Ley de Garantías Mobiliarias",
+          "Código de Comercio",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "cancelación post-fusión",
+          "absorción de entidades garantes"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.11.09",
+        "label": "otro_contratacion_comercial",
+        "nombre": "Otros Aspectos de Contratación Comercial",
+        "definicion": "Otros temas relacionados con contratación comercial que no encajan en las categorías anteriores",
+        "normatividad": [
+          "Código de Comercio",
+          "Normatividad comercial general"
+        ],
+        "frecuencia_estimada_pct": 12.5,
+        "ejemplos_observados": [
+          "consultas generales sobre contratos",
+          "aspectos no clasificados"
+        ]
+      }
+    ]
+  },
+  "REVISOR_FISCAL": {
+    "categoria": "REVISOR_FISCAL",
+    "total_docs_analizados": 7,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.12.01",
+        "label": "obligatoriedad_revisor_fiscal",
+        "nombre": "Obligatoriedad del revisor fiscal",
+        "definicion": "Eventos, requisitos y condiciones en los que las sociedades deben tener revisor fiscal según el tipo societario, patrimonio bruto o decisión de socios",
+        "normatividad": [
+          "art. 203 Código de Comercio",
+          "art. 13 parágrafo 2 Ley 43/1993"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "requisitos para tener revisor fiscal en empresas",
+          "obligatoriedad en sociedades por acciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.12.02",
+        "label": "eleccion_mayorias_revisor",
+        "nombre": "Elección y mayorías del revisor fiscal",
+        "definicion": "Procedimientos, mayorías requeridas, voto en blanco y demás aspectos relacionados con la elección del revisor fiscal por los órganos sociales",
+        "normatividad": [
+          "Código de Comercio",
+          "estatutos sociales"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "mayorías para elección del revisor fiscal",
+          "incidencia del voto en blanco"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.12.03",
+        "label": "incompatibilidades_conflictos",
+        "nombre": "Incompatibilidades y conflictos de interés",
+        "definicion": "Situaciones de incompatibilidad, conflictos de interés, prohibiciones y limitaciones para el ejercicio simultáneo del cargo de revisor fiscal en diferentes sociedades",
+        "normatividad": [
+          "art. 207 Código de Comercio",
+          "Ley 43/1993"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "revisor fiscal simultáneo en matriz y subordinadas",
+          "incompatibilidades legales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.12.04",
+        "label": "funciones_deberes_liquidacion",
+        "nombre": "Funciones en liquidación y situaciones especiales",
+        "definicion": "Deberes, funciones y actuaciones del revisor fiscal en procesos de liquidación voluntaria, sociedades desaparecidas u otras situaciones societarias especiales",
+        "normatividad": [
+          "art. 233 Código de Comercio",
+          "art. 210 Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "funciones en liquidación voluntaria",
+          "actuación frente a sociedades desaparecidas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.12.05",
+        "label": "procedimientos_supervision",
+        "nombre": "Procedimientos de supervisión y control",
+        "definicion": "Aspectos relacionados con la supervisión, firmas conjuntas, auditorías externas y otros procedimientos de control que involucran al revisor fiscal",
+        "normatividad": [
+          "art. 37 Ley 222/1995",
+          "art. 33 Decreto 2649/1993"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "firmas conjuntas con representante legal",
+          "auditorías externas por socios minoritarios"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.12.99",
+        "label": "otro_revisor_fiscal",
+        "nombre": "Otros temas de revisor fiscal",
+        "definicion": "Aspectos relacionados con el revisor fiscal no cubiertos en los subtemas anteriores, incluyendo temas residuales y consultas específicas menores",
+        "normatividad": [
+          "Código de Comercio",
+          "normatividad contable"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "consultas menores sobre revisoría fiscal",
+          "temas no clasificados"
+        ]
+      }
+    ]
+  },
+  "UTILIDADES_DIVIDENDOS": {
+    "categoria": "UTILIDADES_DIVIDENDOS",
+    "total_docs_analizados": 5,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.13.01",
+        "label": "proteccion_accionistas_minoritarios",
+        "nombre": "Protección de Accionistas Minoritarios en Distribución de Utilidades",
+        "definicion": "Mecanismos legales para proteger los derechos de accionistas minoritarios frente a decisiones abusivas de no distribución de utilidades o ejercicio indebido del derecho de voto en la distribución",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 222 de 1995",
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "ejercicio abusivo del derecho de voto",
+          "no distribución injustificada de utilidades"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.13.02",
+        "label": "titularidad_dividendos_transferencia",
+        "nombre": "Titularidad de Dividendos en Transferencia de Acciones",
+        "definicion": "Determinación de la titularidad de dividendos pendientes durante procesos de negociación, transferencia o enajenación de acciones, incluyendo derechos y obligaciones de cedente y cesionario",
+        "normatividad": [
+          "Código de Comercio",
+          "Código Civil"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "dividendos pendientes en negociación de acciones",
+          "derechos del adquirente de acciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.13.03",
+        "label": "pago_dividendos_acciones",
+        "nombre": "Pago de Dividendos en Acciones",
+        "definicion": "Modalidades y requisitos para el pago de dividendos mediante entrega de acciones, incluyendo valoración a valor intrínseco y procedimientos especiales para sociedades de economía mixta",
+        "normatividad": [
+          "Artículo 455 del Código de Comercio",
+          "Ley 489 de 1998"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "dividendos en acciones a valor intrínseco",
+          "sociedades de economía mixta"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.13.04",
+        "label": "dividendos_no_reclamados_intereses",
+        "nombre": "Dividendos No Reclamados e Intereses",
+        "definicion": "Régimen jurídico de dividendos no reclamados por los accionistas, incluyendo causación de intereses por mora, consentimiento presunto y obligaciones de la sociedad",
+        "normatividad": [
+          "Código de Comercio",
+          "Código Civil"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "intereses por atraso en pago",
+          "consentimiento de accionistas"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.13.05",
+        "label": "reservas_estatutarias_sucursales",
+        "nombre": "Reservas Estatutarias en Sucursales",
+        "definicion": "Constitución y manejo de reservas estatutarias en sucursales de sociedades extranjeras, incluyendo requisitos y limitaciones según estatutos de la casa matriz",
+        "normatividad": [
+          "Decreto 2349 de 1993",
+          "Código de Comercio"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "reservas en sucursales de sociedad extranjera",
+          "diferencias con casa matriz"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.13.99",
+        "label": "otro_utilidades_dividendos",
+        "nombre": "Otros Aspectos de Utilidades y Dividendos",
+        "definicion": "Otros aspectos relacionados con distribución de utilidades y dividendos no contemplados en los subtemas anteriores",
+        "normatividad": [
+          "Código de Comercio",
+          "Legislación societaria"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "consultas especiales sobre utilidades",
+          "casos atípicos de dividendos"
+        ]
+      }
+    ]
+  },
+  "LIBROS_CONTABILIDAD": {
+    "categoria": "TX.SOC.14",
+    "total_docs_analizados": 5,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.14.01",
+        "label": "correccion_estados_financieros",
+        "nombre": "Corrección de Estados Financieros",
+        "definicion": "Procedimientos y requisitos para la corrección de errores en estados financieros ya aprobados, incluyendo el reconocimiento de errores contables y la aplicación de principios de materialidad",
+        "normatividad": [
+          "Decreto 2649 de 1993",
+          "Decreto 2650 de 1993",
+          "Principios de Contabilidad Generalmente Aceptados"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "corrección de pasivos no contabilizados",
+          "ajustes posteriores a la aprobación"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.14.02",
+        "label": "libros_electronicos",
+        "nombre": "Libros de Comercio en Archivos Electrónicos",
+        "definicion": "Regulación sobre el manejo de libros oficiales en formato electrónico, incluyendo requisitos técnicos, formatos permitidos y validación de la información digital",
+        "normatividad": [
+          "Decreto 019 de 2012",
+          "Código de Comercio Art. 56",
+          "Circular 100"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "generación de archivos PDF",
+          "garantía de reproducción electrónica"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.14.03",
+        "label": "inscripcion_libros_actas",
+        "nombre": "Inscripción de Libros de Actas",
+        "definicion": "Obligaciones y procedimientos relacionados con la inscripción de libros de actas en el registro mercantil, incluyendo modificaciones normativas recientes sobre su exigibilidad",
+        "normatividad": [
+          "Código de Comercio Art. 28",
+          "Decreto 019 de 2012",
+          "Circular Básica Jurídica"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "eliminación de obligación de registro de actas de junta directiva",
+          "fundamentos legales para exigir inscripción"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.14.04",
+        "label": "conservacion_destruccion_libros",
+        "nombre": "Conservación y Destrucción de Libros",
+        "definicion": "Términos y procedimientos para la conservación, reproducción y destrucción de libros y papeles del comerciante, tanto en formato físico como digital",
+        "normatividad": [
+          "Código de Comercio Art. 60 (derogado)",
+          "Decreto 2649 de 1993 Art. 134 (derogado)",
+          "Ley 962 de 2005"
+        ],
+        "frecuencia_estimada_pct": 35.0,
+        "ejemplos_observados": [
+          "términos de conservación de archivos físicos y digitales",
+          "derogación de normas sobre destrucción",
+          "reproducción por medios técnicos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.14.05",
+        "label": "otro_libros_contabilidad",
+        "nombre": "Otros Aspectos de Libros y Contabilidad",
+        "definicion": "Otros temas relacionados con libros de comercio y contabilidad que no se enmarcan en las categorías específicas anteriores",
+        "normatividad": [
+          "Código de Comercio",
+          "Decretos 2649 y 2650 de 1993"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "consultas generales sobre libros",
+          "aspectos procedimentales diversos"
+        ]
+      }
+    ]
+  },
+  "OTRO": {
+    "categoria": "TX.SOC.20",
+    "total_docs_analizados": 4,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.20.01",
+        "label": "programas_etica_empresarial",
+        "nombre": "Programas de Ética y Transparencia Empresarial",
+        "definicion": "Consultas sobre la implementación, adopción y aplicación de programas de ética empresarial, transparencia corporativa y prevención de prácticas corruptas en sociedades comerciales",
+        "normatividad": [
+          "Ley 1778 de 2016",
+          "Código Penal",
+          "Ley 80 de 1993"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "adopción de programas de ética empresarial",
+          "prevención de soborno transnacional"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.20.02",
+        "label": "uniones_temporales",
+        "nombre": "Uniones Temporales y Figuras Contractuales Especiales",
+        "definicion": "Aspectos jurídicos relacionados con la naturaleza, constitución, funcionamiento y características de uniones temporales, consorcios y otras figuras contractuales especiales en el derecho societario",
+        "normatividad": [
+          "Ley 80 de 1993",
+          "Ley 1150 de 2007",
+          "Código Civil"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "naturaleza jurídica de uniones temporales",
+          "diferenciación entre entes jurídicos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.20.03",
+        "label": "normatividad_decretos_reglamentarios",
+        "nombre": "Normatividad y Decretos Reglamentarios del Sector",
+        "definicion": "Consultas sobre decretos reglamentarios, normatividad general del sector comercio, industria y turismo, y disposiciones normativas que afectan el derecho societario",
+        "normatividad": [
+          "Decreto 1074 de 2015",
+          "Código de Comercio",
+          "Ley 222 de 1995"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "decreto único reglamentario del sector comercio",
+          "modificaciones normativas sectoriales"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.20.04",
+        "label": "investigacion_academica",
+        "nombre": "Investigación Académica y Metodología Jurídica",
+        "definicion": "Respuestas a solicitudes de investigación académica, tesis de grado, estudios metodológicos en derecho procesal y comercial, y orientaciones para investigaciones jurídicas",
+        "normatividad": [
+          "Ley 1755 de 2015",
+          "Código General del Proceso",
+          "Ley Estatutaria 1581 de 2012"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "investigación en procesos concursales",
+          "metodología para tesis de grado"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.20.05",
+        "label": "otro_consultas_diversas",
+        "nombre": "Otras Consultas Diversas",
+        "definicion": "Consultas que no se enmarcan en las categorías específicas anteriores, incluyendo temas residuales, consultas atípicas o materias no clasificadas en otros subtemas del derecho societario",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 222 de 1995",
+          "Normatividad general"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": [
+          "consultas atípicas",
+          "temas no clasificados"
+        ]
+      }
+    ]
+  },
+  "PROCEDIMIENTO": {
+    "categoria": "TX.SOC.15",
+    "total_docs_analizados": 4,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.15.01",
+        "label": "impugnacion_decisiones_sociales",
+        "nombre": "Impugnación de decisiones sociales",
+        "definicion": "Procedimientos para impugnar actas y decisiones de órganos sociales (asambleas, juntas de socios, juntas de asociados), incluyendo requisitos de procedibilidad como la conciliación extrajudicial, competencia judicial y trámites aplicables",
+        "normatividad": [
+          "Código de Comercio art. 191",
+          "Ley 1563 de 2012",
+          "Ley 1258 de 2008"
+        ],
+        "frecuencia_estimada_pct": 50.0,
+        "ejemplos_observados": [
+          "impugnación de actas de uniones temporales",
+          "conciliación extrajudicial como requisito de procedibilidad para SAS"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.15.02",
+        "label": "notificaciones_administrativas",
+        "nombre": "Notificaciones administrativas",
+        "definicion": "Procedimientos y modalidades de notificaciones administrativas realizadas por la Superintendencia de Sociedades, incluyendo notificaciones por medios electrónicos y aplicación del Código de Procedimiento Administrativo",
+        "normatividad": [
+          "Ley 1437 de 2011 (CPACA)",
+          "Decreto 1081 de 2015"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "notificaciones por medios electrónicos",
+          "tipos de notificación según CPACA"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.15.03",
+        "label": "levantamiento_velo_corporativo",
+        "nombre": "Levantamiento del velo corporativo",
+        "definicion": "Procedimientos y criterios para el levantamiento del velo corporativo, incluyendo la superación de la separación patrimonial entre sociedad y socios cuando se configuren supuestos de abuso o fraude",
+        "normatividad": [
+          "Código de Comercio",
+          "Jurisprudencia de la Corte Suprema",
+          "Doctrina de la Supersociedades"
+        ],
+        "frecuencia_estimada_pct": 15.0,
+        "ejemplos_observados": [
+          "separación patrimonial entre sociedad y socios",
+          "criterios para levantamiento del velo"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.15.04",
+        "label": "otro_procedimiento",
+        "nombre": "Otros aspectos procedimentales",
+        "definicion": "Otros temas relacionados con procedimientos societarios, administrativos y judiciales no cubiertos en los subtemas anteriores",
+        "normatividad": [
+          "Código de Comercio",
+          "Ley 1437 de 2011",
+          "Normatividad específica"
+        ],
+        "frecuencia_estimada_pct": 10.0,
+        "ejemplos_observados": [
+          "procedimientos especiales",
+          "trámites diversos ante Supersociedades"
+        ]
+      }
+    ]
+  },
+  "ENTIDADES_SIN_ANIMO_LUCRO": {
+    "categoria": "ENTIDADES_SIN_ANIMO_LUCRO",
+    "total_docs_analizados": 4,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.16.01",
+        "label": "competencia_supersociedades",
+        "nombre": "Competencia de la Superintendencia sobre ESAL",
+        "definicion": "Determinación de la competencia de la Superintendencia de Sociedades sobre entidades sin ánimo de lucro, incluyendo federaciones, asociaciones, cooperativas y otras organizaciones que escapan a su jurisdicción",
+        "normatividad": [
+          "Ley 222/1995 arts. 82-85",
+          "Constitución Política art. 189",
+          "Decreto 1080/2015"
+        ],
+        "frecuencia_estimada_pct": 30.0,
+        "ejemplos_observados": [
+          "Federaciones como FENALCO",
+          "Cooperativas y confederaciones"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.16.02",
+        "label": "gobierno_corporativo_esal",
+        "nombre": "Gobierno corporativo en ESAL",
+        "definicion": "Aspectos relacionados con derechos de voto, impugnación de actos, inspección de libros y documentos, y funcionamiento de asambleas en fundaciones, asociaciones y corporaciones sin ánimo de lucro",
+        "normatividad": [
+          "Código Civil",
+          "Código de Comercio (analogía)",
+          "Ley 222/1995"
+        ],
+        "frecuencia_estimada_pct": 40.0,
+        "ejemplos_observados": [
+          "Derechos de voto en reorganización de pasivos",
+          "Impugnación en clubes sociales y deportivos"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.16.03",
+        "label": "liquidacion_esal",
+        "nombre": "Liquidación de entidades sin ánimo de lucro",
+        "definicion": "Procedimientos y aspectos legales relacionados con el proceso liquidatorio de entidades sin ánimo de lucro, incluyendo competencias y normatividad aplicable",
+        "normatividad": [
+          "Código Civil",
+          "Ley 222/1995",
+          "Decreto 1080/2015"
+        ],
+        "frecuencia_estimada_pct": 20.0,
+        "ejemplos_observados": [
+          "Proceso liquidatorio general de ESAL"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.16.04",
+        "label": "otro_esal",
+        "nombre": "Otros aspectos de ESAL",
+        "definicion": "Otros temas relacionados con entidades sin ánimo de lucro que no se enmarcan en las categorías anteriores",
+        "normatividad": [
+          "Normatividad diversa según el caso"
+        ],
+        "frecuencia_estimada_pct": 10.0,
+        "ejemplos_observados": [
+          "Consultas diversas sobre ESAL"
+        ]
+      }
+    ]
+  },
+  "REGIMEN_CAMBIARIO": {
+    "categoria": "REGIMEN_CAMBIARIO",
+    "total_docs_analizados": 3,
+    "subtemas": [
+      {
+        "codigo": "TX.SOC.17.01",
+        "label": "inversion_extranjera_directa",
+        "nombre": "Inversión Extranjera Directa",
+        "definicion": "Consultas sobre el régimen, registro, declaración y modificaciones de la inversión extranjera directa en Colombia, incluyendo pérdida de calidad de residente cambiario y constitución de IED",
+        "normatividad": [
+          "Decreto 1068 de 2015",
+          "Circular Reglamentaria Externa DCIN-83",
+          "Ley 9 de 1991"
+        ],
+        "frecuencia_estimada_pct": 40.0,
+        "ejemplos_observados": [
+          "residente que pierde calidad cambiaria",
+          "constitución de IED en SAS"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.17.02",
+        "label": "capitalizacion_deuda_sucursales",
+        "nombre": "Capitalización de Deuda en Sucursales",
+        "definicion": "Procedimientos cambiarios para capitalización de deudas en sucursales de sociedades extranjeras, registro ante Banco de la República y reversión de capitalizaciones rechazadas",
+        "normatividad": [
+          "Decreto 1068 de 2015",
+          "Circular Reglamentaria Externa DCIN-83"
+        ],
+        "frecuencia_estimada_pct": 30.0,
+        "ejemplos_observados": [
+          "capitalización rechazada por Banco de la República",
+          "reversión de capitalización en sucursal"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.17.03",
+        "label": "garantias_fiduciarias_cambio_titular",
+        "nombre": "Garantías Fiduciarias y Cambio de Titularidad",
+        "definicion": "Aspectos cambiarios relacionados con ejecución de garantías fiduciarias y sustitución de titulares de inversión extranjera, incluyendo registros y reportes obligatorios",
+        "normatividad": [
+          "Decreto 1068 de 2015",
+          "Circular Reglamentaria Externa DCIN-83"
+        ],
+        "frecuencia_estimada_pct": 25.0,
+        "ejemplos_observados": [
+          "ejecución de garantía fiduciaria",
+          "sustitución de titulares de IED"
+        ]
+      },
+      {
+        "codigo": "TX.SOC.17.04",
+        "label": "otro_regimen_cambiario",
+        "nombre": "Otros Aspectos del Régimen Cambiario",
+        "definicion": "Consultas sobre régimen cambiario societario no clasificadas en los subtemas anteriores, incluyendo operaciones de cambio especiales y procedimientos cambiarios diversos",
+        "normatividad": [
+          "Decreto 1068 de 2015",
+          "Estatuto Orgánico del Sistema Financiero"
+        ],
+        "frecuencia_estimada_pct": 5.0,
+        "ejemplos_observados": []
+      }
+    ]
+  }
+}
