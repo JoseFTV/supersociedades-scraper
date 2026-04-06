@@ -40,6 +40,15 @@ data/exports/summary.json
 .DS_Store
 Thumbs.db
 
+# Node
+node_modules/
+.next/
+.vercel/
+
+# Separate repos (managed independently)
+supersociedadesChatGPT/
+supersociedadesChatGPT-ref/
+
 # Misc
 *.log
 *.tmp
