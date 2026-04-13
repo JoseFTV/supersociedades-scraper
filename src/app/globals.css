@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f4f6f8;
+  --color-brand-100: #e3ebf3;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-900: #1e3a8a;
+  
+  --color-slate-850: #151e2e;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  
+  /* Lexia Custom Colors - Tailwind v4 Theme Block Override */
+  --color-lexia-black: #060606;
+  --color-lexia-bg: #FAFBFC;
+  --color-lexia-teal: #008080;
+  --color-lexia-teal-light: #85d3d4;
+  --color-lexia-gray: #8B8C8E;
+  --color-lexia-green: #00F5A2;
+}
+
+@import "@fontsource/hind-guntur/300.css";
+@import "@fontsource/hind-guntur/400.css";
+@import "@fontsource/hind-guntur/500.css";
+@import "@fontsource/hind-guntur/700.css";
+
+@layer base {
+  :root {
+    --background: #FAFBFC;
+    --foreground: #060606;
+    --card: #ffffff;
+    --card-foreground: #060606;
+    --primary: #008080;
+    --primary-foreground: #ffffff;
+    --muted: #f1f5f9;
+    --muted-foreground: #8B8C8E;
+    --border: #e2e8f0;
+    
+    /* Lexia Custom Colors */
+    --lexia-teal: #008080;
+    --lexia-teal-light: #85d3d4;
+    --lexia-black: #060606;
+    --lexia-gray: #8B8C8E;
+    --lexia-green: #00F5A2;
+  }
+
+  /* Force light mode variables everywhere since design is light-first */
+  .dark {
+    --background: #FAFBFC;
+    --foreground: #060606;
+    --card: #ffffff;
+    --card-foreground: #060606;
+    --primary: #008080; 
+    --primary-foreground: #ffffff;
+    --muted: #f1f5f9;
+    --muted-foreground: #8B8C8E;
+    --border: #e2e8f0;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Hind Guntur', sans-serif;
+    @apply antialiased selection:bg-lexia-teal selection:text-white transition-colors duration-200;
+  }
+  
+  /* Custom scrollbar for webkit */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--muted-foreground);
+    border-radius: 4px;
+    opacity: 0.5;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtle gradient animations */
+.bg-gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
