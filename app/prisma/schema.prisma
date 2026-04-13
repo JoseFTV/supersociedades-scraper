@@ -1,0 +1,354 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+  extensions = [vector]
+}
+
+model Case {
+  id                String   @id @default(uuid())
+  caseName          String
+  sourceReference   String
+  sourceUrl         String?
+  filingDate        String
+  decisionDate      String
+  duration          String
+  year              Int
+  office            String
+  actionType        String
+  subtopics         String[]
+  summary           String
+  factualBackground String
+  legalIssue        String
+  proceduralTrack   String
+  outcomeGeneral    String
+  outcomeDetailed   String
+
+  // Multi-instancia (Tribunales, CSJ)
+  court            String   @default("Supersociedades")
+  // "Supersociedades" | "Tribunal Superior de Bogotá" | "Tribunal Superior de Medellín" | "CSJ Sala Civil"
+  courtLevel       String   @default("Primera Instancia")
+  // "Primera Instancia" | "Segunda Instancia" | "Casación"
+  firstInstanceRef String?
+  // Número de expediente de Supersociedades al que hace referencia (para linkear)
+  appealsOutcome   String?
+  // null para 1ª instancia | "Confirmó" | "Revocó" | "Modificó" | "Casó"
+
+  // Semantic Search Vector (3072 dimensions for Gemini gemini-embedding-001)
+  embedding         Unsupported("vector(3072)")?
+  markdownContent   String? // Documento Markdown enriquecido para RAG
+  pdfBlobUrl        String? // Public URL from Vercel Blob storage
+
+  parties        Party[]
+  claims         Claim[]
+  remedies       Remedy[]
+  authorities    Authority[]
+  strategicFlags StrategicFlags?
+
+  // Nuevos para Iniciativa A
+  citationsMade     CitationLink[]  @relation("CitingCase")
+  citationsReceived CitationLink[]  @relation("CitedCase")
+  authorityScore    Float           @default(0)
+  lopezRole         String?         // "FUNDADORA" | "HITO" | "CONFIRMADORA" | "PERIFÉRICA"
+
+  // Nuevos para Iniciativa B
+  factualPattern    FactualPattern?
+  evidence          Evidence[]
+  legalArguments    LegalArgument[]
+  legalBases        LegalBasis[]
+
+  // Razones de Negación (Serie RN v1.1)
+  denialReasons     DenialReason[]
+
+  // Cross-reference to laudos arbitrales
+  relatedLaudos     Laudo[]
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([actionType])
+  @@index([year])
+  @@index([court, courtLevel])
+}
+
+model Party {
+  id        String @id @default(uuid())
+  caseId    String
+  name      String
+  role      String // Demandante, Demandado, Tercero
+  type      String // Individuo, Sociedad, Administrador, etc.
+  
+  case      Case   @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model Claim {
+  id              String  @id @default(uuid())
+  caseId          String
+  type            String
+  text            String
+  requestedRemedy String
+  
+  case            Case    @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model Remedy {
+  id      String  @id @default(uuid())
+  caseId  String
+  type    String
+  granted Boolean
+  detail  String?
+  
+  case    Case    @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model Authority {
+  id            String  @id @default(uuid())
+  caseId        String
+  normType      String  // Ley, Decreto, Jurisprudencia, etc.
+  citationText  String
+  articleNumber String?
+
+  case          Case    @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  citationLink  CitationLink?
+}
+
+model StrategicFlags {
+  id                          String  @id @default(uuid())
+  caseId                      String  @unique
+  standingDiscussed           Boolean @default(false)
+  jurisdictionDiscussed       Boolean @default(false)
+  highEvidentiaryBurden       Boolean @default(false)
+  highestBodyAuthorization    Boolean @default(false)
+  shareholderAgreementDeposit Boolean @default(false)
+  interimRelief               Boolean @default(false)
+
+  case                        Case    @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model JurisprudenceCache {
+  id         String   @id @default(uuid())
+  actionType String   @unique
+  result     Json     // Stores the Gemini output JSON
+  createdAt  DateTime @default(now())
+}
+
+// MODELOS PARA INICIATIVA A — Grafo Citacional
+
+model CitationLink {
+  id                String     @id @default(cuid())
+  citingCaseId      String
+  citingCase        Case       @relation("CitingCase", fields: [citingCaseId], references: [id], onDelete: Cascade)
+  citedCaseId       String?
+  citedCase         Case?      @relation("CitedCase", fields: [citedCaseId], references: [id])
+  sourceAuthorityId String     @unique
+  sourceAuthority   Authority  @relation(fields: [sourceAuthorityId], references: [id], onDelete: Cascade)
+  rawReference      String     // citationText original
+  confidence        Float
+  matchMethod       String     // "EXACT" | "FUZZY" | "GEMINI" | "UNRESOLVED"
+  isExternal        Boolean    @default(false)
+  externalCourt     String?    // "CORTE_SUPREMA" | "CORTE_CONSTITUCIONAL" | "CONSEJO_ESTADO"
+  createdAt         DateTime   @default(now())
+
+  @@unique([citingCaseId, sourceAuthorityId])
+  @@index([citedCaseId])
+  @@index([citingCaseId])
+}
+
+// MODELOS PARA INICIATIVA B — Enriquecimiento de Ingesta
+
+model FactualPattern {
+  id              String   @id @default(cuid())
+  caseId          String   @unique
+  case            Case     @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  coreDispute     String
+  triggerEvent    String
+  corporateConfig String
+  keyFacts        String[]
+  contestedFacts  String[]
+  timeline        String
+}
+
+model Evidence {
+  id          String   @id @default(cuid())
+  caseId      String
+  case        Case     @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  description String
+  submittedBy String   // "DEMANDANTE" | "DEMANDADO" | "AMBAS_PARTES" | "DECRETO_OFICIO"
+  category    String   // "DOCUMENTAL" | "TESTIMONIAL" | "PERICIAL" | "INSPECCION"
+  wasAccepted Boolean
+  weight      String   // "DECISIVA" | "RELEVANTE" | "MARGINAL" | "DESESTIMADA"
+  reasoning   String
+}
+
+model LegalArgument {
+  id          String   @id @default(cuid())
+  caseId      String
+  case        Case     @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  party       String   // "DEMANDANTE" | "DEMANDADO"
+  argument    String
+  legalBasis  String
+  outcome     String   // "ACOGIDO" | "DESESTIMADO" | "PARCIALMENTE_ACOGIDO"
+  whyOutcome  String
+  isStrategic Boolean  @default(false)
+}
+
+model LegalBasis {
+  id          String   @id @default(cuid())
+  caseId      String
+  case        Case     @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  norm        String
+  normType    String   // "CODIGO_COMERCIO" | "LEY" | "DECRETO" | "REGLAMENTO"
+  application String
+  wasDecisive Boolean
+}
+
+// MODELO PARA TAXONOMÍA RN — Razones de Negación de Pretensiones
+// Serie RN v1.1 (12 códigos) — derivada empíricamente de 120 sentencias
+
+model DenialReason {
+  id          String   @id @default(cuid())
+  caseId      String
+  case        Case     @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  code        String   // "RN.01" | "RN.02" | "RN.03a" | "RN.03b" | "RN.04a" | "RN.04b" | "RN.05" | "RN.06" | "RN.07" | "RN.08" | "RN.09" | "RN.10" | "RN.11"
+  label       String   // Human-readable label
+  reasoning   String   // Why this RN applies to this case (1-2 sentences from LLM)
+  confidence  String   // "high" | "medium" | "low"
+  source      String   @default("haiku_enrichment") // "haiku_enrichment" | "extraction_prompt" | "manual"
+  createdAt   DateTime @default(now())
+
+  @@index([caseId])
+  @@index([code])
+  @@index([code, caseId])
+}
+
+// ─── Entity Resolution ──────────────────────────────────────────────────────
+// Canonical entities for recurring parties (persons, companies)
+
+model CanonicalEntity {
+  id            String   @id @default(cuid())
+  canonicalName String   // "Carlos Hakim Daccach"
+  entityType    String   // "PERSONA_NATURAL" | "PERSONA_JURIDICA"
+  aliases       String[] // ["CARLOS HAKIM DACCACH", "Carlos Hakim D."]
+  totalCases    Int      @default(0)
+  asPlaintiff   Int      @default(0)
+  asDefendant   Int      @default(0)
+  winRate       Float?   // Win rate when plaintiff
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([entityType])
+  @@index([totalCases])
+}
+
+model IngestQuarantine {
+  id              String   @id @default(uuid())
+  fileName        String
+  errors          String[] // lista de errores de validación
+  rawGeminiOutput String // output completo de Gemini para debug
+  createdAt       DateTime @default(now())
+  resolved        Boolean  @default(false)
+}
+
+// ════════════════════════════════════════════════════════════════════════════════
+// CONCEPTOS JURÍDICOS — Doctrina de la Superintendencia de Sociedades
+// Fuente: 12,758 PDFs descargados del portal de Supersociedades
+// Taxonomía: Serie TX.SOC (20 categorías, 114 subtemas)
+// ════════════════════════════════════════════════════════════════════════════════
+
+model Concepto {
+  id              String   @id @default(cuid())
+  filename        String   @unique  // e.g. "OFICIO_220-39235.pdf"
+  year            Int
+  sourceFile      String   // path relativo al PDF original
+  textPreview     String   // primeros 1500 chars del PDF
+
+  // Clasificación TX.SOC
+  temaPrincipal   String   // TX.SOC.XX code
+  temaSecundario  String?  // TX.SOC.XX code (optional)
+  subtema         String   // descripción breve del subtema
+  confianza       Float    // 0.0–1.0 classification confidence
+
+  // Enriquecimiento (populated by enrichment pipeline)
+  titulo          String?  // one-line título del concepto
+  resumen         String?  // 2-3 sentence summary
+  normatividad    String[] // normas citadas (Art. X Ley Y)
+
+  // Semantic Search (populated by embedding pipeline)
+  embedding       Unsupported("vector(3072)")?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([temaPrincipal])
+  @@index([year])
+  @@index([temaPrincipal, year])
+}
+
+// ════════════════════════════════════════════════════════════════════════════════
+// LAUDOS ARBITRALES — Centro de Arbitraje de la CCB y otros centros
+// Fuente: Lexia corpus (49 laudos analizados, 2,089 indexados)
+// Taxonomía: Series CT.SOC + B6 (Lexia v3.0)
+// ════════════════════════════════════════════════════════════════════════════════
+
+model Laudo {
+  id                String   @id @default(cuid())
+  caseTitle         String   // "Demandante vs Demandado"
+  arbitrationCenter String   // "CCB", "CAC Medellín", etc.
+  city              String?
+  arbitrationType   String?  // "derecho", "equidad", "técnico"
+  awardNature       String?  // "laudo", "auto"
+  cuantia           String?  // valor en texto
+  pages             Int?
+  vertical          String   // "societario", "seguros", "construccion", etc.
+  subVertical       String?  // "M&A", "impugnacion_asamblea", etc.
+  radicado          String?  // número de radicado
+  year              Int?
+
+  // Partes
+  parties           Json?    // [{name, role, type}]
+  tribunal          Json?    // [{name, role}] — árbitros
+  counsel           Json?    // [{party, firm, attorneys}]
+
+  // Contrato y hechos
+  contractType      String?  // tipo de contrato subyacente
+  timeline          Json?    // [{date, event}]
+
+  // Pretensiones y decisión
+  pretensiones      Json?    // structured claims
+  excepciones       Json?    // defenses raised
+  reconvencion      Json?    // counterclaims
+  decision          Json?    // {dispositiva, ratio_decidendi, ...}
+
+  // Análisis jurídico
+  legalIssues       Json?    // [{issue, resolution, legal_basis}]
+  controversies     Json?    // controversy type codes (CT.SOC.XX)
+  failures          Json?    // failure codes (A.XX, B6.XX)
+  evidence          Json?    // [{type, description, weight}]
+
+  // Corporate-specific
+  corporateData     Json?    // {society_type, capital, governance, ...}
+
+  // Quality
+  confidenceScore   Float?   // extraction confidence
+  needsHumanReview  Boolean  @default(false)
+
+  // Cross-reference to sentencias (if same dispute went to Supersoc)
+  relatedCaseId     String?
+  relatedCase       Case?    @relation(fields: [relatedCaseId], references: [id])
+
+  // Semantic Search
+  embedding         Unsupported("vector(3072)")?
+  markdownContent   String?  // RAG document
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([vertical, subVertical])
+  @@index([year])
+  @@index([createdAt])
+}
