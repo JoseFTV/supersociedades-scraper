@@ -2,34 +2,36 @@
 
 from __future__ import annotations
 
+import threading
 import time
-from typing import Optional
 
 import httpx
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from src.config import cfg
 from src.logger import get_logger
 
 log = get_logger("supersoc.http")
 
-_client: Optional[httpx.Client] = None
+_client: httpx.Client | None = None
+_client_lock = threading.Lock()
 
 
 def get_client() -> httpx.Client:
     global _client
-    if _client is None or _client.is_closed:
-        _client = httpx.Client(
-            timeout=httpx.Timeout(cfg.request_timeout, connect=10),
-            verify=cfg.verify_ssl,
-            headers={"User-Agent": cfg.user_agent},
-            follow_redirects=True,
-            limits=httpx.Limits(
-                max_connections=cfg.max_workers + 2,
-                max_keepalive_connections=cfg.max_workers,
-            ),
-        )
-    return _client
+    with _client_lock:
+        if _client is None or _client.is_closed:
+            _client = httpx.Client(
+                timeout=httpx.Timeout(cfg.request_timeout, connect=10),
+                verify=cfg.verify_ssl,
+                headers={"User-Agent": cfg.user_agent},
+                follow_redirects=True,
+                limits=httpx.Limits(
+                    max_connections=cfg.max_workers + 2,
+                    max_keepalive_connections=cfg.max_workers,
+                ),
+            )
+        return _client
 
 
 def close_client() -> None:

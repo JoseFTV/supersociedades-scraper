@@ -1,10 +1,10 @@
 """Tests for URL and utility functions."""
 
 from src.utils import (
-    normalize_filename,
-    parse_spanish_date,
     extract_year_from_date,
     guess_extension,
+    normalize_filename,
+    parse_spanish_date,
     sha256_bytes,
 )
 

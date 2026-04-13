@@ -2,28 +2,34 @@
 
 from __future__ import annotations
 
-from pathlib import Path
-from typing import Sequence
+import threading
+from collections.abc import Sequence
 
-from src.models import DocumentRecord
 from src.logger import get_logger
+from src.models import DocumentRecord
 
 log = get_logger("supersoc.dedupe")
 
 
 class DedupeIndex:
-    """Track seen documents by URL, normalized name, and hash."""
+    """Track seen documents by URL, normalized name, and hash.
+
+    All public methods are thread-safe.
+    """
 
     def __init__(self) -> None:
         self._by_url: dict[str, DocumentRecord] = {}
         self._by_name: dict[str, DocumentRecord] = {}
         self._by_hash: dict[str, DocumentRecord] = {}
+        self._lock = threading.Lock()
 
     def load_from_records(self, records: Sequence[DocumentRecord]) -> None:
-        for rec in records:
-            self._index(rec)
+        with self._lock:
+            for rec in records:
+                self._index(rec)
 
     def _index(self, rec: DocumentRecord) -> None:
+        # Must be called with self._lock held.
         url_key = rec.url_descarga.split("?")[0]
         if url_key:
             self._by_url[url_key] = rec
@@ -33,17 +39,26 @@ class DedupeIndex:
             self._by_hash[rec.hash_sha256] = rec
 
     def is_url_seen(self, url: str) -> bool:
-        return url.split("?")[0] in self._by_url
+        with self._lock:
+            return url.split("?")[0] in self._by_url
 
     def is_hash_seen(self, sha: str) -> bool:
-        return sha in self._by_hash
+        with self._lock:
+            return sha in self._by_hash
+
+    def get_by_url(self, url: str) -> DocumentRecord | None:
+        with self._lock:
+            return self._by_url.get(url.split("?")[0])
 
     def get_by_hash(self, sha: str) -> DocumentRecord | None:
-        return self._by_hash.get(sha)
+        with self._lock:
+            return self._by_hash.get(sha)
 
     def add(self, rec: DocumentRecord) -> None:
-        self._index(rec)
+        with self._lock:
+            self._index(rec)
 
     @property
     def count(self) -> int:
-        return len(self._by_url)
+        with self._lock:
+            return len(self._by_url)

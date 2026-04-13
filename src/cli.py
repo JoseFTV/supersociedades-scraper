@@ -12,15 +12,14 @@ import click
 from src.config import cfg
 from src.dedupe import DedupeIndex
 from src.http_client import close_client
-from src.logger import setup_logging, get_logger
+from src.logger import get_logger, setup_logging
 from src.models import DocumentRecord
 from src.scraper.contables import ContablesScraper
 from src.scraper.downloader import Downloader
 from src.scraper.juridicos import JuridicosScraper
 from src.storage import (
-    load_checkpoint,
     load_csv,
-    save_checkpoint,
+    merge_records,
     save_csv,
     save_jsonl,
     save_summary,
@@ -53,12 +52,7 @@ def _run_index(
         max_pages=max_pages, limit=limit, existing_records=existing
     )
 
-    # Merge with existing (keep new, update old)
-    url_map = {r.url_descarga.split("?")[0]: r for r in existing}
-    for rec in records:
-        url_key = rec.url_descarga.split("?")[0]
-        url_map[url_key] = rec
-    merged = list(url_map.values())
+    merged = merge_records(existing, records)
 
     save_csv(merged, csv_path)
     log.info("[%s] Index saved: %d total records", fuente, len(merged))
@@ -252,7 +246,6 @@ def dry_run(source: str, pages: int, limit: int):
 def single(source: str, index_only: bool, download_only: bool):
     """Run index and/or download for a single source."""
     _init()
-    log = get_logger("supersoc.cli")
 
     if not download_only:
         records = _run_index(source)
@@ -261,10 +254,51 @@ def single(source: str, index_only: bool, download_only: bool):
 
     if not index_only:
         pending = [r for r in records if r.estado_descarga in ("pending", "error")]
-        dl = _run_download(pending)
+        _run_download(pending)
         save_csv(records, cfg.metadata_dir / f"{source}_index.csv")
 
     close_client()
+
+
+@cli.command("run")
+@click.option("--source", type=click.Choice(["juridicos", "contables", "all"]), default="all")
+def run_cmd(source: str):
+    """Index and download all documents in a single pipeline run."""
+    _init()
+    log = get_logger("supersoc.cli")
+    t0 = time.time()
+
+    jur, cont = [], []
+    if source in ("juridicos", "all"):
+        jur = _run_index("juridicos")
+    if source in ("contables", "all"):
+        cont = _run_index("contables")
+
+    _save_all_metadata(jur, cont)
+
+    all_records = jur + cont
+    pending = [r for r in all_records if r.estado_descarga in ("pending", "error")]
+    log.info("Total pending downloads: %d", len(pending))
+    _run_download(pending)
+
+    # Retry errors once
+    errors = [r for r in pending if r.estado_descarga == "error"]
+    if errors:
+        log.info("Retrying %d errors...", len(errors))
+        for r in errors:
+            r.estado_descarga = "pending"
+            r.error = ""
+        _run_download(errors)
+
+    # Persist final state
+    for source_name in ("juridicos", "contables"):
+        csv_path = cfg.metadata_dir / f"{source_name}_index.csv"
+        save_csv([r for r in all_records if r.fuente == source_name], csv_path)
+
+    summary = _build_summary(jur, cont, time.time() - t0)
+    save_summary(summary, cfg.exports_dir / "summary.json")
+    close_client()
+    click.echo(json.dumps(summary, indent=2, ensure_ascii=False))
 
 
 @cli.command("export")

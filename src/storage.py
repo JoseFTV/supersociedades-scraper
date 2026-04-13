@@ -4,11 +4,11 @@ from __future__ import annotations
 
 import csv
 import json
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
-from src.models import DocumentRecord
 from src.logger import get_logger
+from src.models import DocumentRecord
 
 log = get_logger("supersoc.storage")
 
@@ -49,7 +49,7 @@ def load_csv(path: Path) -> list[DocumentRecord]:
     if not path.exists():
         return []
     records = []
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             rec = DocumentRecord(**{k: v for k, v in row.items() if k in DocumentRecord.__dataclass_fields__})
@@ -68,7 +68,7 @@ def load_checkpoint(path: Path) -> list[DocumentRecord]:
     if not path.exists():
         return []
     records = []
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line:
@@ -76,6 +76,20 @@ def load_checkpoint(path: Path) -> list[DocumentRecord]:
                 rec = DocumentRecord(**{k: v for k, v in data.items() if k in DocumentRecord.__dataclass_fields__})
                 records.append(rec)
     return records
+
+
+def merge_records(
+    existing: list[DocumentRecord],
+    new: list[DocumentRecord],
+) -> list[DocumentRecord]:
+    """Merge new records into existing, keyed by URL (without query string).
+
+    New records take precedence over existing ones with the same URL.
+    """
+    url_map = {r.url_descarga.split("?")[0]: r for r in existing}
+    for r in new:
+        url_map[r.url_descarga.split("?")[0]] = r
+    return list(url_map.values())
 
 
 def save_summary(summary: dict, path: Path) -> None:

@@ -2,17 +2,13 @@
 
 from __future__ import annotations
 
-import time
-from pathlib import Path
-from typing import Optional
-
 from src.config import cfg
 from src.http_client import fetch_page
+from src.logger import get_logger
 from src.models import DocumentRecord
 from src.parsers import parse_listing_page, parse_total_results
 from src.scraper.paginator import PaginationState
 from src.storage import save_checkpoint
-from src.logger import get_logger
 
 log = get_logger("supersoc.scraper")
 
@@ -50,9 +46,9 @@ class BaseScraper:
 
     def index_all(
         self,
-        max_pages: Optional[int] = None,
-        limit: Optional[int] = None,
-        existing_records: Optional[list[DocumentRecord]] = None,
+        max_pages: int | None = None,
+        limit: int | None = None,
+        existing_records: list[DocumentRecord] | None = None,
     ) -> list[DocumentRecord]:
         """Index all documents from all pages."""
         total = self.discover_total()

@@ -1,7 +1,6 @@
 """Tests for HTML parsers."""
 
-from src.parsers import parse_total_results, parse_listing_page
-
+from src.parsers import parse_listing_page, parse_total_results
 
 SAMPLE_HTML = """
 <html>

@@ -6,7 +6,6 @@ import hashlib
 import re
 import unicodedata
 from pathlib import Path
-from typing import Optional
 
 _MONTH_MAP = {
     "ene": "01", "feb": "02", "mar": "03", "abr": "04",

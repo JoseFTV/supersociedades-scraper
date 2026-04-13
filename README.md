@@ -76,21 +76,20 @@ Variables en `.env`:
 ### Ejecución completa
 
 ```bash
+# Pipeline completo: indexación → descarga → retry → exportación
+python -m src.cli run
+# equivalente:
 python run_full.py
 ```
-
-Ejecuta: indexación → descarga → retry de errores → exportación.
 
 ### Comandos CLI
 
 ```bash
-# Indexar todo
+# Solo indexar metadatos
 python -m src.cli index
-
-# Indexar solo jurídicos
 python -m src.cli index --source juridicos
 
-# Descargar todo lo indexado
+# Solo descargar archivos ya indexados
 python -m src.cli download
 
 # Reanudar descargas interrumpidas

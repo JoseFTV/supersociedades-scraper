@@ -3,14 +3,12 @@
 from __future__ import annotations
 
 import re
-from typing import Optional
-from urllib.parse import urljoin, unquote
 
 from bs4 import BeautifulSoup, Tag
 
-from src.models import DocumentRecord
-from src.utils import parse_spanish_date, guess_extension, normalize_filename
 from src.logger import get_logger
+from src.models import DocumentRecord
+from src.utils import guess_extension, normalize_filename, parse_spanish_date
 
 log = get_logger("supersoc.parser")
 
