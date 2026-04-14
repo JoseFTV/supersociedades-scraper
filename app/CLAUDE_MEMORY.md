@@ -1,12 +1,59 @@
 # Lexia Analytics — Claude Memory File
-> Last updated: 2026-04-05
+> Last updated: 2026-04-13
 > Reference this file at the start of a new session.
+
+---
+
+## 0. Monorepo Structure & Deployment (Updated 2026-04-13)
+
+**Repository:** `github.com/JoseFTV/supersociedades-scraper` (monorepo)
+
+```
+supersociedades-scraper/
+├── app/             ← Next.js 16 app (Lexia Analytics)
+├── scraper/         ← Python scraper (conceptos jurídicos)
+├── data/            ← Taxonomías compartidas
+├── vercel.json      ← CRITICAL: routes all traffic to app/
+└── README.md
+```
+
+**Vercel Project:** `supersociedades-chat-gpt` (ID: `prj_9kYW1uEDXIpMtmAGzRtREdN10zfB`)
+- **Production URL:** https://supersociedades-chat-gpt.vercel.app/
+- **Root Directory:** `null` (NOT "app" — uses vercel.json builds instead)
+- **Production Branch:** `main`
+- **Framework:** Next.js (detected via `vercel.json` builds array)
+- **Auto-deploy:** Triggered on push to `main` via GitHub webhook
+
+**CRITICAL — vercel.json at repo root:**
+```json
+{
+  "version": 2,
+  "builds": [{ "src": "app/package.json", "use": "@vercel/next" }],
+  "routes": [{ "src": "/(.*)", "dest": "app/$1" }]
+}
+```
+This file is essential. Without it, Vercel uses `@vercel/static` and the app doesn't build.
+Do NOT set Root Directory to "app" in Vercel — it causes the build to fail silently (224ms static build).
+Do NOT delete `vercel.json` — it's the only way Vercel correctly detects and builds Next.js.
+
+**Auth:** Clerk has been REMOVED. All auth is disabled (`requireAuth()` returns `{ userId: 'anonymous' }`).
+- `middleware.ts` is a passthrough (`NextResponse.next()`)
+- No login required for any page
+
+**Other Vercel projects to ignore:**
+- `app` (accidental, created by CLI) — can be deleted
+- The old `supersociedadesChatGPT` repo on GitHub is archived/unused
+
+**Scraper (Python):**
+- 4 phases of tech debt remediation completed (80/80 tests pass, ruff clean)
+- Key files: `scraper/src/cli.py` (run command), `scraper/src/storage.py` (merge_records)
+- Run: `cd scraper && python -m src.cli run`
 
 ---
 
 ## 1. Project Overview
 
-**Lexia Analytics** is a Colombian corporate litigation intelligence platform built with Next.js 14 (App Router), Prisma + PostgreSQL (Neon), pgvector for semantic search, Clerk for auth, and deployed on Vercel.
+**Lexia Analytics** is a Colombian corporate litigation intelligence platform built with Next.js 16 (App Router), Prisma + PostgreSQL (Neon), pgvector for semantic search, and deployed on Vercel.
 
 **Data corpus:**
 - **292 sentencias** (judicial decisions from Superintendencia de Sociedades) — with embeddings (3072-dim Gemini)
@@ -99,7 +146,7 @@
 | `ANTHROPIC_API_KEY` | Claude API (relevance notes, copilot, reclassification) | ✅ |
 | `GEMINI_API_KEY` | Gemini embeddings for semantic search | ⚠️ **Missing in Vercel — ADD THIS** |
 | `BLOB_READ_WRITE_TOKEN` | Vercel Blob private store | ✅ |
-| `NEXT_PUBLIC_CLERK_*` | Clerk auth keys | ✅ |
+| `NEXT_PUBLIC_CLERK_*` | Clerk auth keys (REMOVED — auth disabled) | ❌ No longer needed |
 
 **Important:** Scripts need `require('dotenv').config({ override: true })` because system env vars may exist as empty strings.
 
@@ -116,6 +163,11 @@
 | 7 | Laudos solo societario + reclassify 13 manual cases + enrich conceptos script | `5d859b0` |
 | — | PDF proxy for private Blob + taxonomy fixes (AS.15) | `048b347` |
 | — | AI relevance notes + semantic search + cross-map completion | `3dfb026` |
+| — | Scraper tech debt: 4 phases (merge_records, concurrency, tests, CI) | `e19dba2` |
+| — | Remove Clerk auth (middleware passthrough, anonymous userId) | `e19dba2` |
+| — | Monorepo: combine scraper + app repos via git subtree | `e19dba2` |
+| — | Fix Vercel deploy: vercel.json with @vercel/next builder + routes | `274b563` |
+| — | Apply Lexia design system to /analytics/deep page | `ca70088` |
 
 ---
 
@@ -199,9 +251,12 @@
 - Schema: `embedding Unsupported("vector(3072)")?`
 
 ### Deployment
-- `npx vercel --prod --force` — force build to bypass cache (important!)
-- Cached deploys show 0ms build time and don't pick up changes
-- Production URL: check Vercel dashboard
+- **Auto-deploy:** Push to `main` triggers Vercel build automatically via GitHub webhook
+- **Manual deploy:** `npx vercel --prod --force` from repo root (NOT from `app/`)
+- The `vercel.json` at repo root is CRITICAL — uses `@vercel/next` builder with `app/package.json`
+- Without it, Vercel CLI falls back to `@vercel/static` (224ms build, 404 on all pages)
+- Do NOT set Root Directory in Vercel project settings — leave it null
+- Production URL: https://supersociedades-chat-gpt.vercel.app/
 
 ### Claude Usage
 - `claude-sonnet-4-20250514` for: relevance notes, copilot memos, reclassification, enrichment
